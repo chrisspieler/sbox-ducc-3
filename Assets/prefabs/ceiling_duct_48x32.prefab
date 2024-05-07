@@ -1,0 +1,99 @@
+{
+  "RootObject": {
+    "__guid": "b44493fe-7af9-4854-9086-b1013e2e5655",
+    "Name": "Ceiling Air Duct 48x32",
+    "Position": "0,0,192",
+    "Enabled": true,
+    "NetworkMode": 2,
+    "NetworkInterpolation": true,
+    "Children": [
+      {
+        "__guid": "288d7628-5f85-41d6-be04-326fc5abd7d2",
+        "Name": "airduct_a_panel_b_48x32",
+        "Position": "-16.00005,-24,-16",
+        "Rotation": "0,0.9999999,0,0.0000001947072",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.ModelRenderer",
+            "__guid": "ad62bc16-47ed-4cef-a280-3e58307c70e7",
+            "BodyGroups": 18446744073709551615,
+            "Model": "models/sbox_props/airducts/airduct_a_panel_b_48x32.vmdl",
+            "RenderType": "On",
+            "Tint": "1,1,1,1"
+          },
+          {
+            "__type": "Sandbox.ModelCollider",
+            "__guid": "866e6a69-67ea-46cc-b69e-5f6bc2cd5341",
+            "IsTrigger": false,
+            "Model": "models/sbox_props/airducts/airduct_a_panel_b_48x32.vmdl",
+            "Static": true
+          }
+        ]
+      },
+      {
+        "__guid": "eeb229a8-7bca-4f6f-a10a-2fd1dcc2ef6c",
+        "Name": "airduct_a_panel_48x16 (1)",
+        "Position": "-15.99998,24,-16.00002",
+        "Rotation": "-0.7071068,0.0000001376788,0.7071068,0.0000001376788",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.ModelRenderer",
+            "__guid": "2113a3b0-ebad-4164-84b6-e631d6629ffd",
+            "BodyGroups": 18446744073709551615,
+            "Model": "models/sbox_props/airducts/airduct_a_panel_48x16.vmdl",
+            "RenderType": "On",
+            "Tint": "1,1,1,1"
+          },
+          {
+            "__type": "Sandbox.ModelCollider",
+            "__guid": "e26763f9-6e1f-460c-a3b1-fdcc89da6d2b",
+            "IsTrigger": false,
+            "Model": "models/sbox_props/airducts/airduct_a_panel_48x16.vmdl",
+            "Static": true
+          }
+        ]
+      },
+      {
+        "__guid": "3e457b3e-aabc-436e-b693-fee9f7e039e4",
+        "Name": "airduct_a_panel_48x16",
+        "Position": "15.99999,-24,-16",
+        "Rotation": "0,0.7071068,0,0.7071068",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.ModelRenderer",
+            "__guid": "4394f5f5-da71-4cc5-953f-eb8b3f49a56f",
+            "BodyGroups": 18446744073709551615,
+            "Model": "models/sbox_props/airducts/airduct_a_panel_48x16.vmdl",
+            "RenderType": "On",
+            "Tint": "1,1,1,1"
+          },
+          {
+            "__type": "Sandbox.ModelCollider",
+            "__guid": "b8fcb0a7-6824-47b1-aabb-31b4314a0f86",
+            "IsTrigger": false,
+            "Model": "models/sbox_props/airducts/airduct_a_panel_48x16.vmdl",
+            "Static": true
+          }
+        ]
+      }
+    ]
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "ResourceVersion": 1,
+  "__version": 1,
+  "__references": [
+    "facepunch.airduct_a_panel_48x16",
+    "facepunch.airduct_a_panel_b_48x32"
+  ]
+}

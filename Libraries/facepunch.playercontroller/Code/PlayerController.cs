@@ -10,6 +10,9 @@ public sealed class PlayerController : Component
 	[Property] public float RunMoveSpeed { get; set; } = 190.0f;
 	[Property] public float SprintMoveSpeed { get; set; } = 320.0f;
 
+	[Property] public bool CustomEyeAngle { get; set; } = false;
+	[Property, ShowIf(nameof(CustomEyeAngle), true)] 
+	public Angles InitialEyeAngle { get; set; }
 	[Property] public bool UsePrefererredFov { get; set; } = false;
 
 	[Property] public CitizenAnimationHelper AnimationHelper { get; set; }
@@ -23,7 +26,9 @@ public sealed class PlayerController : Component
 
 	protected override void OnStart()
 	{
-		EyeAngles = Transform.Rotation;
+		EyeAngles = CustomEyeAngle 
+			? InitialEyeAngle
+			: Transform.Rotation;
 	}
 
 	protected override void OnUpdate()
