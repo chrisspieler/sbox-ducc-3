@@ -1075,11 +1075,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\users\\chris\\documents\\s&box projects\\ducc_3\\Libraries\\facepunch.playercontroller\\UnitTests\\playercontroller.unittest.csproj",
+      "projectUniqueName": "c:\\Users\\Chris\\Documents\\s&box projects\\ducc_3\\Libraries\\facepunch.playercontroller\\UnitTests\\playercontroller.unittest.csproj",
       "projectName": "playercontroller.unittest",
-      "projectPath": "C:\\users\\chris\\documents\\s&box projects\\ducc_3\\Libraries\\facepunch.playercontroller\\UnitTests\\playercontroller.unittest.csproj",
+      "projectPath": "c:\\Users\\Chris\\Documents\\s&box projects\\ducc_3\\Libraries\\facepunch.playercontroller\\UnitTests\\playercontroller.unittest.csproj",
       "packagesPath": "C:\\Users\\Chris\\.nuget\\packages\\",
-      "outputPath": "C:\\users\\chris\\documents\\s&box projects\\ducc_3\\Libraries\\facepunch.playercontroller\\UnitTests\\obj\\",
+      "outputPath": "c:\\Users\\Chris\\Documents\\s&box projects\\ducc_3\\Libraries\\facepunch.playercontroller\\UnitTests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Users\\Chris\\AppData\\Roaming\\Godot\\mono\\GodotNuGetFallbackFolder",
