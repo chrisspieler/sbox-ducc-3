@@ -193,6 +193,45 @@
           "LightColor": "0.24035,0.25298,0.25581,1",
           "Radius": 1200,
           "Shadows": false
+        },
+        {
+          "__type": "Ducc.DailyColorCycle",
+          "__guid": "3f09d8b8-a0dd-4798-9961-0d69db944012",
+          "MainGradient": {
+            "color": [
+              {
+                "t": 0.15598291,
+                "c": "0.07451,0.08235,0.08235,1"
+              },
+              {
+                "t": 0.24786325,
+                "c": "0.1814,0.16283,0.13499,1"
+              },
+              {
+                "t": 0.3931624,
+                "c": "0.23922,0.25098,0.2549,1"
+              },
+              {
+                "t": 0.6367521,
+                "c": "0.23922,0.25098,0.2549,1"
+              },
+              {
+                "t": 0.758547,
+                "c": "0.12558,0.119,0.09521,1"
+              },
+              {
+                "t": 0.88247865,
+                "c": "0.07788,0.08226,0.08372,1"
+              }
+            ]
+          },
+          "SecondaryGradient": {},
+          "Tintable": {
+            "_type": "component",
+            "component_id": "0c74b0b4-3ccd-4b74-9253-938031861c22",
+            "go": "836fc72e-d53e-400e-9afb-e2867ff79bc5",
+            "component_type": "PointLight"
+          }
         }
       ]
     },
@@ -2404,6 +2443,32 @@
                   "Static": false
                 }
               ]
+            }
+          ]
+        },
+        {
+          "__guid": "36b0bca4-91c7-4296-ae97-379e8de9b5ed",
+          "Name": "Bounce Light Controller",
+          "Position": "-42,0,6",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "NetworkInterpolation": true,
+          "Components": [
+            {
+              "__type": "Ducc.BounceSunlightController",
+              "__guid": "febce711-a6c3-4f40-8ff4-ef4c045b5611",
+              "BounceLight": {
+                "_type": "component",
+                "component_id": "0c74b0b4-3ccd-4b74-9253-938031861c22",
+                "go": "836fc72e-d53e-400e-9afb-e2867ff79bc5",
+                "component_type": "PointLight"
+              },
+              "SunLight": {
+                "_type": "component",
+                "component_id": "54839ed5-ff7d-4356-ab72-d5acef4d1dbb",
+                "go": "258c7883-8f7e-4142-9ab8-67209eb1ffea",
+                "component_type": "DirectionalLight"
+              }
             }
           ]
         }
@@ -4720,7 +4785,7 @@
   },
   "Title": "cage",
   "Description": "",
-  "LastSaved": "2024-05-07T11:25:01.0459059-06:00",
+  "LastSaved": "2024-05-07T11:52:53.8503991-06:00",
   "ResourceVersion": 1,
   "__version": 1,
   "__references": [
