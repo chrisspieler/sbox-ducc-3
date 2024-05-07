@@ -9,6 +9,6 @@ public sealed class DailyRotation : Component
 	
 	protected override void OnUpdate()
 	{
-		Transform.Rotation = BaseRotation * Rotation.FromAxis( RotationAxis, ClockSystem.DayProgress * 360f );
+		Transform.Rotation = BaseRotation * Rotation.FromAxis( RotationAxis, ClockSystem.DayProgress * 360f + 90f );
 	}
 }
