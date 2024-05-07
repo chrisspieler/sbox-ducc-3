@@ -30,7 +30,6 @@ public sealed class PlayerFootsteps : Component
 
 		if ( Controller.IsOnGround && !_wasOnGround )
 		{
-			Log.Info( "landed" );
 			_timeSinceLanding = 0f;
 		}
 		_wasOnGround = Controller.IsOnGround;

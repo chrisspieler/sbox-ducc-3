@@ -5,7 +5,7 @@
       "__guid": "ba26bee8-0c49-42e5-b6a1-273d438853a3",
       "Name": "2D Skybox",
       "Position": "-30.60079,-25.39101,93.14023",
-      "Rotation": "0,0,0.3261209,0.9453281",
+      "Rotation": "0,0,0.7734756,0.6338261",
       "Tags": "skybox",
       "Enabled": true,
       "NetworkMode": 2,
@@ -15,7 +15,84 @@
           "__type": "Sandbox.SkyBox2D",
           "__guid": "804ef44d-7150-4e34-920c-d6ba2a50c5e5",
           "SkyMaterial": "6.vmat",
-          "Tint": "1,1,1,1"
+          "Tint": "0.00451,0.00448,0.00465,1"
+        },
+        {
+          "__type": "Ducc.RandomRotation",
+          "__guid": "5e63fef3-6a54-467b-98b1-cdcfd135bb22"
+        },
+        {
+          "__type": "Ducc.Rotator",
+          "__guid": "c4e77494-10de-4209-8133-61b22050bf73",
+          "DegreesPerSecond": "0.8,0.5,0"
+        },
+        {
+          "__type": "Ducc.DailyColorCycle",
+          "__guid": "779d4644-a362-4808-93c9-648e12d4d6d3",
+          "MainGradient": {
+            "color": [
+              {
+                "c": "0.00392,0.00392,0.00392,1"
+              },
+              {
+                "t": 0.21153846,
+                "c": "0.00392,0.00392,0.00392,1"
+              },
+              {
+                "t": 0.28418803,
+                "c": "1,0.66698,0.16744,1"
+              },
+              {
+                "t": 0.41666666,
+                "c": "0.7814,0.70435,0.58877,1"
+              },
+              {
+                "t": 0.5747863,
+                "c": "1,1,1,1"
+              },
+              {
+                "t": 0.6944444,
+                "c": "1,0.98116,0.96945,1"
+              },
+              {
+                "t": 0.78205127,
+                "c": "1,0.53535,0.24651,1"
+              },
+              {
+                "t": 0.8888889,
+                "c": "0.00392,0.00392,0.00392,1"
+              }
+            ]
+          },
+          "SecondaryGradient": {
+            "color": [
+              {
+                "c": "0.00392,0.00392,0.00392,1"
+              },
+              {
+                "t": 0.19871795,
+                "c": "0.77674,0.58744,0.30347,1"
+              },
+              {
+                "t": 0.5277778,
+                "c": "1,1,1,1"
+              },
+              {
+                "t": 0.8311966,
+                "c": "1,0.7124,0.50698,1"
+              },
+              {
+                "t": 1,
+                "c": "0.00392,0.00392,0.00392,1"
+              }
+            ]
+          },
+          "Tintable": {
+            "_type": "component",
+            "component_id": "804ef44d-7150-4e34-920c-d6ba2a50c5e5",
+            "go": "ba26bee8-0c49-42e5-b6a1-273d438853a3",
+            "component_type": "SkyBox2D"
+          }
         }
       ]
     },
@@ -37,6 +114,64 @@
           "LightColor": "0.91373,0.98039,1,1",
           "Shadows": true,
           "SkyColor": "0,0,0,1"
+        },
+        {
+          "__type": "Ducc.DailyRotation",
+          "__guid": "1a1c20e4-fd31-4e83-9f89-cc71648329bd",
+          "BaseRotation": "0,0,0",
+          "RotationAxis": "0,-1,0"
+        },
+        {
+          "__type": "Ducc.DailyColorCycle",
+          "__guid": "402077a0-9618-4a82-af59-3f902768f752",
+          "MainGradient": {
+            "color": [
+              {
+                "t": 0.29700854,
+                "c": "0.05098,0.05098,0.0549,1"
+              },
+              {
+                "t": 0.3611111,
+                "c": "0.75349,0.65448,0.35747,1"
+              },
+              {
+                "t": 0.5,
+                "c": "0.94419,0.99814,1,1"
+              },
+              {
+                "t": 0.69017094,
+                "c": "0.95814,0.93096,0.6863,1"
+              },
+              {
+                "t": 0.8995727,
+                "c": "0.05429,0.05296,0.05581,1"
+              }
+            ]
+          },
+          "SecondaryGradient": {
+            "color": [
+              {
+                "t": 0.41239315,
+                "c": "0,0,0,1"
+              },
+              {
+                "t": 0.72008544,
+                "c": "0,0,0,1"
+              }
+            ],
+            "alpha": [
+              {
+                "t": 0.61752135,
+                "a": 1
+              }
+            ]
+          },
+          "Tintable": {
+            "_type": "component",
+            "component_id": "54839ed5-ff7d-4356-ab72-d5acef4d1dbb",
+            "go": "258c7883-8f7e-4142-9ab8-67209eb1ffea",
+            "component_type": "DirectionalLight"
+          }
         }
       ]
     },
@@ -2340,7 +2475,7 @@
             {
               "__type": "Sandbox.SkinnedModelRenderer",
               "__guid": "b876f28d-4c09-4c90-86f0-28cf26307fe7",
-              "BodyGroups": 341,
+              "BodyGroups": 340,
               "CreateBoneObjects": true,
               "Model": "models/citizen/citizen.vmdl",
               "RenderType": "On",
@@ -2517,8 +2652,8 @@
                                     {
                                       "__guid": "6f6ba7d1-ac2d-4d95-ad15-16e1bfc041fc",
                                       "Name": "Bill",
-                                      "Position": "3.835415,6.120587,-0.0000006112348",
-                                      "Scale": "0.08,0.25,0.13",
+                                      "Position": "3.94401,4.322598,0.00007067678",
+                                      "Scale": "0.05,0.2121597,0.13",
                                       "Enabled": true,
                                       "NetworkMode": 2,
                                       "NetworkInterpolation": true,
@@ -2536,8 +2671,8 @@
                                     {
                                       "__guid": "0af8a4ec-9b7c-4348-b9c7-6eae25a7d4b5",
                                       "Name": "Smooth Head",
-                                      "Position": "6.916907,0.1763502,-0.00001453801",
-                                      "Scale": "0.2668563,0.2,0.2522527",
+                                      "Position": "7.456292,0.1763511,-0.00001039345",
+                                      "Scale": "0.23,0.13,0.18",
                                       "Enabled": true,
                                       "NetworkMode": 2,
                                       "NetworkInterpolation": true,
@@ -2551,6 +2686,25 @@
                                           "Tint": "0,1,0.08333,1"
                                         }
                                       ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "__guid": "3108b715-3e53-405c-961d-57990b23d75a",
+                                  "Name": "Neck",
+                                  "Position": "3.338946,-0.0000102967,-0.000009610209",
+                                  "Scale": "0.2085593,0.1,0.06383988",
+                                  "Enabled": true,
+                                  "NetworkMode": 2,
+                                  "NetworkInterpolation": true,
+                                  "Components": [
+                                    {
+                                      "__type": "Sandbox.ModelRenderer",
+                                      "__guid": "b917029c-72a8-4b52-b107-91e7a048c655",
+                                      "BodyGroups": 18446744073709551615,
+                                      "Model": "models/dev/sphere.vmdl",
+                                      "RenderType": "ShadowsOnly",
+                                      "Tint": "1,1,1,1"
                                     }
                                   ]
                                 }
@@ -3086,6 +3240,25 @@
                               "Enabled": true,
                               "NetworkMode": 2,
                               "NetworkInterpolation": true
+                            },
+                            {
+                              "__guid": "a1d70a35-38c1-4fa1-9747-0e183d2b62bb",
+                              "Name": "Chest",
+                              "Position": "6.264733,-0.000007884109,0.00001535518",
+                              "Scale": "0.1383258,0.2074463,0.224774",
+                              "Enabled": true,
+                              "NetworkMode": 2,
+                              "NetworkInterpolation": true,
+                              "Components": [
+                                {
+                                  "__type": "Sandbox.ModelRenderer",
+                                  "__guid": "44480097-211d-4874-bb14-6312d54e3de4",
+                                  "BodyGroups": 18446744073709551615,
+                                  "Model": "models/dev/sphere.vmdl",
+                                  "RenderType": "ShadowsOnly",
+                                  "Tint": "0.21667,1,0,1"
+                                }
+                              ]
                             }
                           ]
                         }
@@ -3256,6 +3429,26 @@
                       "Enabled": true,
                       "NetworkMode": 2,
                       "NetworkInterpolation": true
+                    },
+                    {
+                      "__guid": "625450db-5fe2-4afa-b8b0-fe196e891ef7",
+                      "Name": "Thigh",
+                      "Position": "5.606536,0.4097591,-0.01938091",
+                      "Rotation": "0.0005618557,0.01955712,-0.0287144,0.9993982",
+                      "Scale": "0.2619975,0.1028636,0.1388942",
+                      "Enabled": true,
+                      "NetworkMode": 2,
+                      "NetworkInterpolation": true,
+                      "Components": [
+                        {
+                          "__type": "Sandbox.ModelRenderer",
+                          "__guid": "a18c934d-e9ef-4e31-b7df-c145f9915404",
+                          "BodyGroups": 18446744073709551615,
+                          "Model": "models/dev/sphere.vmdl",
+                          "RenderType": "ShadowsOnly",
+                          "Tint": "1,1,1,1"
+                        }
+                      ]
                     }
                   ]
                 },
@@ -3421,15 +3614,35 @@
                       "Enabled": true,
                       "NetworkMode": 2,
                       "NetworkInterpolation": true
+                    },
+                    {
+                      "__guid": "25fcca36-ad23-4d9c-a9b6-efd698080a92",
+                      "Name": "Thigh",
+                      "Position": "6.254313,0.372509,-0.157399",
+                      "Rotation": "0.0005618483,0.01955693,-0.0287144,0.9993982",
+                      "Scale": "0.2619975,0.1028636,0.1388942",
+                      "Enabled": true,
+                      "NetworkMode": 2,
+                      "NetworkInterpolation": true,
+                      "Components": [
+                        {
+                          "__type": "Sandbox.ModelRenderer",
+                          "__guid": "e51de172-322f-46e1-aae0-fc8c6edde1fb",
+                          "BodyGroups": 18446744073709551615,
+                          "Model": "models/dev/sphere.vmdl",
+                          "RenderType": "ShadowsOnly",
+                          "Tint": "1,1,1,1"
+                        }
+                      ]
                     }
                   ]
                 },
                 {
                   "__guid": "194aef47-39b0-4771-a533-0a97fbfedd8c",
-                  "Name": "Sphere",
-                  "Position": "2.694618,-4.692326,0.3567574",
-                  "Rotation": "-0.00000008940697,-0.00000001490116,0.258819,0.9659259",
-                  "Scale": "0.1,0.15,0.1",
+                  "Name": "Tail",
+                  "Position": "4.158133,-7.678642,0.3567344",
+                  "Rotation": "-0.00000008940697,0.00000001490116,0.3826835,0.9238796",
+                  "Scale": "0.08,0.1,0.08",
                   "Enabled": true,
                   "NetworkMode": 2,
                   "NetworkInterpolation": true,
@@ -3440,7 +3653,27 @@
                       "BodyGroups": 18446744073709551615,
                       "Model": "models/dev/sphere.vmdl",
                       "RenderType": "ShadowsOnly",
-                      "Tint": "0.13333,1,0,1"
+                      "Tint": "1,1,1,1"
+                    }
+                  ]
+                },
+                {
+                  "__guid": "736968fc-0f44-4682-a01a-a23cd21bc74c",
+                  "Name": "Rear",
+                  "Position": "4.400261,-2.227401,0.3567464",
+                  "Rotation": "-0.00000009685755,-0.00000003352761,0.2588191,0.9659258",
+                  "Scale": "0.2,0.2,0.2",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "NetworkInterpolation": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.ModelRenderer",
+                      "__guid": "4792a7dd-59aa-43c9-89f7-0f3c9097872b",
+                      "BodyGroups": 18446744073709551615,
+                      "Model": "models/dev/sphere.vmdl",
+                      "RenderType": "ShadowsOnly",
+                      "Tint": "1,1,1,1"
                     }
                   ]
                 }
@@ -3976,7 +4209,7 @@
         {
           "__guid": "92773e85-c7fa-4d6e-94b1-01add45b4c1f",
           "Name": "Outside Bounce Light",
-          "Position": "-60.80295,45.93199,106.2979",
+          "Position": "88,45.93203,4",
           "Tags": "light_point,light",
           "Enabled": true,
           "NetworkMode": 2,
@@ -3985,32 +4218,43 @@
             {
               "__type": "Sandbox.PointLight",
               "__guid": "3c0d0862-2cca-4083-9a93-a2a46c8b7a4f",
-              "Attenuation": 0.26,
+              "Attenuation": 0.05,
               "FogMode": "Enabled",
               "FogStrength": 1,
               "LightColor": "0.77274,0.88372,0.85043,1",
-              "Radius": 2000,
+              "Radius": 3000,
               "Shadows": true
-            }
-          ],
-          "Children": [
+            },
             {
-              "__guid": "3295bc51-b355-4ae6-a298-b7a7908f6a30",
-              "Name": "Light Blocker",
-              "Position": "0,0,-10",
-              "Enabled": true,
-              "NetworkMode": 2,
-              "NetworkInterpolation": true,
-              "Components": [
-                {
-                  "__type": "Sandbox.ModelRenderer",
-                  "__guid": "0cabf7e8-eb8b-4c3e-8001-1e2f1766389f",
-                  "BodyGroups": 18446744073709551615,
-                  "Model": "models/dev/plane.vmdl",
-                  "RenderType": "On",
-                  "Tint": "1,1,1,1"
-                }
-              ]
+              "__type": "Ducc.DailyColorCycle",
+              "__guid": "f98c4f3c-8fac-4627-9d13-5a7b3b9f2196",
+              "MainGradient": {
+                "color": [
+                  {
+                    "t": 0.19017094,
+                    "c": "0.05315,0.06047,0.05815,1"
+                  },
+                  {
+                    "t": 0.517094,
+                    "c": "0.56056,0.64293,0.61736,1"
+                  },
+                  {
+                    "t": 0.69871795,
+                    "c": "0.77255,0.88627,0.85098,1"
+                  },
+                  {
+                    "t": 0.91239315,
+                    "c": "0.05098,0.05882,0.0549,1"
+                  }
+                ]
+              },
+              "SecondaryGradient": {},
+              "Tintable": {
+                "_type": "component",
+                "component_id": "3c0d0862-2cca-4083-9a93-a2a46c8b7a4f",
+                "go": "92773e85-c7fa-4d6e-94b1-01add45b4c1f",
+                "component_type": "PointLight"
+              }
             }
           ]
         }
@@ -4428,6 +4672,29 @@
           "TriPlanar": false
         }
       ]
+    },
+    {
+      "__guid": "9a860085-0785-4767-b310-bba81893666f",
+      "Name": "Spotlight",
+      "Position": "-50.78388,26,200",
+      "Rotation": "0,0.459983,0,0.8879277",
+      "Tags": "light_spot,light",
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "Components": [
+        {
+          "__type": "Sandbox.SpotLight",
+          "__guid": "01791ee1-f7a7-4101-b7f3-9f2905ea168e",
+          "Attenuation": 1,
+          "ConeInner": 15,
+          "ConeOuter": 18.04,
+          "FogMode": "Enabled",
+          "FogStrength": 1,
+          "LightColor": "0.91373,0.98039,1,1",
+          "Radius": 500,
+          "Shadows": true
+        }
+      ]
     }
   ],
   "SceneProperties": {
@@ -4453,7 +4720,7 @@
   },
   "Title": "cage",
   "Description": "",
-  "LastSaved": "2024-05-07T09:30:12.012599-06:00",
+  "LastSaved": "2024-05-07T11:25:01.0459059-06:00",
   "ResourceVersion": 1,
   "__version": 1,
   "__references": [
