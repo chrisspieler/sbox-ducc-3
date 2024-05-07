@@ -1,7 +1,7 @@
 {
   "format": 1,
   "restore": {
-    "C:\\users\\chris\\documents\\s&box projects\\ducc_3\\Libraries\\facepunch.playercontroller\\Editor\\playercontroller.editor.csproj": {}
+    "c:\\Users\\Chris\\Documents\\s&box projects\\ducc_3\\Libraries\\facepunch.playercontroller\\Editor\\playercontroller.editor.csproj": {}
   },
   "projects": {
     "C:\\Program Files (x86)\\Steam\\steamapps\\common\\sbox\\addons\\base\\Code\\Base Library.csproj": {
@@ -120,14 +120,14 @@
         }
       }
     },
-    "C:\\users\\chris\\documents\\s&box projects\\ducc_3\\Libraries\\facepunch.playercontroller\\Code\\playercontroller.csproj": {
+    "c:\\Users\\Chris\\Documents\\s&box projects\\ducc_3\\Libraries\\facepunch.playercontroller\\Code\\playercontroller.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\users\\chris\\documents\\s&box projects\\ducc_3\\Libraries\\facepunch.playercontroller\\Code\\playercontroller.csproj",
+        "projectUniqueName": "c:\\Users\\Chris\\Documents\\s&box projects\\ducc_3\\Libraries\\facepunch.playercontroller\\Code\\playercontroller.csproj",
         "projectName": "playercontroller",
-        "projectPath": "C:\\users\\chris\\documents\\s&box projects\\ducc_3\\Libraries\\facepunch.playercontroller\\Code\\playercontroller.csproj",
+        "projectPath": "c:\\Users\\Chris\\Documents\\s&box projects\\ducc_3\\Libraries\\facepunch.playercontroller\\Code\\playercontroller.csproj",
         "packagesPath": "C:\\Users\\Chris\\.nuget\\packages\\",
-        "outputPath": "C:\\users\\chris\\documents\\s&box projects\\ducc_3\\Libraries\\facepunch.playercontroller\\Code\\obj\\",
+        "outputPath": "c:\\Users\\Chris\\Documents\\s&box projects\\ducc_3\\Libraries\\facepunch.playercontroller\\Code\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Users\\Chris\\AppData\\Roaming\\Godot\\mono\\GodotNuGetFallbackFolder",
@@ -182,14 +182,14 @@
         }
       }
     },
-    "C:\\users\\chris\\documents\\s&box projects\\ducc_3\\Libraries\\facepunch.playercontroller\\Editor\\playercontroller.editor.csproj": {
+    "c:\\Users\\Chris\\Documents\\s&box projects\\ducc_3\\Libraries\\facepunch.playercontroller\\Editor\\playercontroller.editor.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\users\\chris\\documents\\s&box projects\\ducc_3\\Libraries\\facepunch.playercontroller\\Editor\\playercontroller.editor.csproj",
+        "projectUniqueName": "c:\\Users\\Chris\\Documents\\s&box projects\\ducc_3\\Libraries\\facepunch.playercontroller\\Editor\\playercontroller.editor.csproj",
         "projectName": "playercontroller.editor",
-        "projectPath": "C:\\users\\chris\\documents\\s&box projects\\ducc_3\\Libraries\\facepunch.playercontroller\\Editor\\playercontroller.editor.csproj",
+        "projectPath": "c:\\Users\\Chris\\Documents\\s&box projects\\ducc_3\\Libraries\\facepunch.playercontroller\\Editor\\playercontroller.editor.csproj",
         "packagesPath": "C:\\Users\\Chris\\.nuget\\packages\\",
-        "outputPath": "C:\\users\\chris\\documents\\s&box projects\\ducc_3\\Libraries\\facepunch.playercontroller\\Editor\\obj\\",
+        "outputPath": "c:\\Users\\Chris\\Documents\\s&box projects\\ducc_3\\Libraries\\facepunch.playercontroller\\Editor\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Users\\Chris\\AppData\\Roaming\\Godot\\mono\\GodotNuGetFallbackFolder",

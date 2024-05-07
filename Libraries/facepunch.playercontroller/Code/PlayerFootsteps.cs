@@ -3,6 +3,8 @@ using Sandbox.Audio;
 
 public sealed class PlayerFootsteps : Component
 {
+	[Property] public SoundEvent FootstepSoundOverride { get; set; }
+	[Property] public CharacterController Controller { get; set; }
 	[Property] SkinnedModelRenderer Source { get; set; }
 	[Property] MixerHandle TargetMixer { get; set; }
 	[Property] public float VolumeScale { get; set; } = 1f;
@@ -13,6 +15,25 @@ public sealed class PlayerFootsteps : Component
 			return;
 
 		Source.OnFootstepEvent += OnEvent;
+	}
+
+	private bool _wasOnGround = true;
+	TimeSince _timeSinceLanding;
+
+	protected override void OnUpdate()
+	{
+		if ( Controller is null )
+		{
+			_wasOnGround = true;
+			return;
+		}
+
+		if ( Controller.IsOnGround && !_wasOnGround )
+		{
+			Log.Info( "landed" );
+			_timeSinceLanding = 0f;
+		}
+		_wasOnGround = Controller.IsOnGround;
 	}
 
 	protected override void OnDisabled()
@@ -27,6 +48,12 @@ public sealed class PlayerFootsteps : Component
 
 	private void OnEvent( SceneModel.FootstepEvent e )
 	{
+		// Hearing footsteps when stopped sounds freaky.
+		if ( _timeSinceLanding > 0.25f && Input.AnalogMove.Length < 0.1f )
+		{
+			return;
+		}
+
 		if ( timeSinceStep < 0.2f )
 			return;
 
@@ -43,6 +70,9 @@ public sealed class PlayerFootsteps : Component
 		timeSinceStep = 0;
 
 		var sound = e.FootId == 0 ? tr.Surface.Sounds.FootLeft : tr.Surface.Sounds.FootRight;
+		if ( FootstepSoundOverride is not null )
+			sound = FootstepSoundOverride.ResourceName;
+
 		if ( sound is null ) return;
 
 		var handle = Sound.Play( sound, tr.HitPosition + tr.Normal * 5 );

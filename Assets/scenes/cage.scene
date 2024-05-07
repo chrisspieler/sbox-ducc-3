@@ -2353,6 +2353,13 @@
             {
               "__type": "PlayerFootsteps",
               "__guid": "e29fe3e3-3c3b-4976-9126-b97fe2c91a5e",
+              "Controller": {
+                "_type": "component",
+                "component_id": "cc5c28d2-a6cb-4fe8-b007-e811a74dd804",
+                "go": "8a61a228-d0f2-4039-9756-9387a07fc5de",
+                "component_type": "CharacterController"
+              },
+              "FootstepSoundOverride": "sounds/bare_footsteps.sound",
               "Source": {
                 "_type": "component",
                 "component_id": "b876f28d-4c09-4c90-86f0-28cf26307fe7",
@@ -2361,9 +2368,9 @@
               },
               "TargetMixer": {
                 "Name": "game",
-                "Id": "503a741f-e321-4ece-9677-066bae60d539"
+                "Id": "b865f7e3-a53b-48f6-86f2-418286c7e92b"
               },
-              "VolumeScale": 7
+              "VolumeScale": 0.2
             }
           ],
           "Children": [
@@ -3994,6 +4001,14 @@
           ]
         }
       ]
+    },
+    {
+      "__guid": "7ae180f5-7cbc-41db-af68-e847bc439c61",
+      "Name": "Sound Fixer",
+      "Position": "-52.83144,180.2809,73.64098",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true
     }
   ],
   "SceneProperties": {
@@ -4019,7 +4034,7 @@
   },
   "Title": "cage",
   "Description": "",
-  "LastSaved": "2024-05-07T05:43:58.9651895-06:00",
+  "LastSaved": "2024-05-07T06:18:21.6178135-06:00",
   "ResourceVersion": 1,
   "__version": 1,
   "__references": [

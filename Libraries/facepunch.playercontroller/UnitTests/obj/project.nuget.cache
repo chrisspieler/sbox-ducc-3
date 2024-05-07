@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Jsyn4tXJg8BGFdl3WvbotA8aoXWcQUAnRYT60Wg84ifKgSG2Jo6hmSRNYeySMwmm0FNFQkXDKhG6/GvojOE/ww==",
+  "dgSpecHash": "hoP4KHjpvx/+n3mFlbutW4NoEuNiz8EzJ5jCiAG1hb7kZoz94Fs0PCU0LxltVtUZpvF9bPZj3maXWlfr9RBqSA==",
   "success": true,
-  "projectFilePath": "C:\\users\\chris\\documents\\s&box projects\\ducc_3\\Libraries\\facepunch.playercontroller\\UnitTests\\playercontroller.unittest.csproj",
+  "projectFilePath": "c:\\Users\\Chris\\Documents\\s&box projects\\ducc_3\\Libraries\\facepunch.playercontroller\\UnitTests\\playercontroller.unittest.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Chris\\.nuget\\packages\\coverlet.collector\\6.0.0\\coverlet.collector.6.0.0.nupkg.sha512",
     "C:\\Users\\Chris\\.nuget\\packages\\microsoft.codecoverage\\17.7.2\\microsoft.codecoverage.17.7.2.nupkg.sha512",
