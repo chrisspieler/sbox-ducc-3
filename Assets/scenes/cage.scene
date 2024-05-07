@@ -4093,6 +4093,70 @@
       "NetworkInterpolation": true,
       "Components": [
         {
+          "__type": "Ducc.SoundBlender",
+          "__guid": "285fe94b-a40d-4efa-9a77-5bd1345f96ae",
+          "Sound1": {
+            "_type": "component",
+            "component_id": "7338f49b-b04a-4815-baad-5b97a4e4fa93",
+            "go": "b2a933e0-6517-465f-9076-906134ae1268",
+            "component_type": "SoundPointComponent"
+          },
+          "Sound1Curve": [
+            {
+              "y": 0.07180851
+            },
+            {
+              "x": 0.25,
+              "y": 0.20161706,
+              "in": -1.3139582,
+              "out": 1.3139582
+            },
+            {
+              "x": 0.35863093,
+              "y": 0.86702126,
+              "in": -0.0952381,
+              "out": 0.0952381
+            },
+            {
+              "x": 0.5104167,
+              "y": 0.71542555,
+              "in": 0.6666674,
+              "out": -0.6666674
+            },
+            {
+              "x": 0.72321427,
+              "y": 0.8881927
+            },
+            {
+              "x": 0.8556548,
+              "y": 0.15957446
+            }
+          ],
+          "Sound2": {
+            "_type": "component",
+            "component_id": "d75f5e71-41c9-4ca2-9cfa-7d190f15ffcd",
+            "go": "b2a933e0-6517-465f-9076-906134ae1268",
+            "component_type": "SoundPointComponent"
+          },
+          "Sound2Curve": [
+            {
+              "y": 0.4574468
+            },
+            {
+              "x": 0.38988096,
+              "y": 0.023936171
+            },
+            {
+              "x": 0.6651786,
+              "y": 0.023936171
+            },
+            {
+              "x": 1,
+              "y": 0.41489363
+            }
+          ]
+        },
+        {
           "__type": "Sandbox.SoundPointComponent",
           "__guid": "7338f49b-b04a-4815-baad-5b97a4e4fa93",
           "DistanceAttenuation": false,
@@ -4114,6 +4178,31 @@
           "TargetMixer": {
             "Name": "game",
             "Id": "503a741f-e321-4ece-9677-066bae60d539"
+          },
+          "Volume": 1
+        },
+        {
+          "__type": "Sandbox.SoundPointComponent",
+          "__guid": "d75f5e71-41c9-4ca2-9cfa-7d190f15ffcd",
+          "DistanceAttenuation": false,
+          "DistanceAttenuationOverride": false,
+          "Force2d": false,
+          "MaxRepeatTime": 1,
+          "MinRepeatTime": 1,
+          "Occlusion": false,
+          "OcclusionOverride": true,
+          "OcclusionRadius": 32,
+          "Pitch": 1,
+          "PlayOnStart": true,
+          "ReflectionOverride": false,
+          "Reflections": false,
+          "Repeat": true,
+          "SoundEvent": "sounds/crickets_ambience.sound",
+          "SoundOverride": true,
+          "StopOnNew": false,
+          "TargetMixer": {
+            "Name": "game",
+            "Id": "b865f7e3-a53b-48f6-86f2-418286c7e92b"
           },
           "Volume": 1
         }
@@ -4785,7 +4874,7 @@
   },
   "Title": "cage",
   "Description": "",
-  "LastSaved": "2024-05-07T11:52:53.8503991-06:00",
+  "LastSaved": "2024-05-07T12:11:48.5204956-06:00",
   "ResourceVersion": 1,
   "__version": 1,
   "__references": [
