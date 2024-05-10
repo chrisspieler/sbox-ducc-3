@@ -8,8 +8,22 @@ public sealed class Quacker : Component
 	{
 		if ( Input.Pressed( "attack1" ) )
 		{
-			SoundPoint.StopSound();
-			SoundPoint.StartSound();
+			DoQuack();
 		}
+	}
+
+	public bool CanQuack()
+	{
+		return true;
+	}
+
+	public void DoQuack()
+	{
+		if ( !CanQuack() )
+			return;
+
+		Sandbox.Services.Stats.Increment( "quacks", 1 );
+		SoundPoint.StopSound();
+		SoundPoint.StartSound();
 	}
 }
