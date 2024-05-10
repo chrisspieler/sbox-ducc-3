@@ -184,7 +184,7 @@
       "__guid": "836fc72e-d53e-400e-9afb-e2867ff79bc5",
       "Flags": 0,
       "Name": "Bounce Light",
-      "Position": "50.56478,24,99.23969",
+      "Position": "-36,23.99999,138",
       "Tags": "light_point,light",
       "Enabled": true,
       "NetworkMode": 2,
@@ -198,7 +198,7 @@
           "FogStrength": 0,
           "LightColor": "0.24035,0.25298,0.25581,1",
           "Radius": 1200,
-          "Shadows": false
+          "Shadows": true
         },
         {
           "__type": "Ducc.DailyColorCycle",
@@ -1078,7 +1078,7 @@
               "0,0",
               "0,0",
               "0,0",
-              "0,-64",
+              "0,-56",
               "0,0",
               "0,0",
               "0,0",
@@ -2512,7 +2512,6 @@
             "go": "8ab755d5-12fa-4b9a-8745-6f524a5ff022",
             "component_type": "CitizenAnimationHelper"
           },
-          "CameraSmoothing": 30,
           "CharacterController": {
             "_type": "component",
             "component_id": "cc5c28d2-a6cb-4fe8-b007-e811a74dd804",
@@ -5054,7 +5053,7 @@
   },
   "Title": "cage",
   "Description": "",
-  "LastSaved": "2024-05-10T07:40:37.179229-06:00",
+  "LastSaved": "2024-05-10T08:00:04.2221206-06:00",
   "ResourceVersion": 1,
   "__version": 1,
   "__references": [

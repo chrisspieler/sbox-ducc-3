@@ -4,6 +4,9 @@ using Sandbox.Citizen;
 [Title( "Walker - Player Controller" )]
 public sealed class PlayerController : Component
 {
+	[ConVar("camera_smoothing")]
+	public static float CameraSmoothing { get; set; } = 0f;
+
 	[Property] public CharacterController CharacterController { get; set; }
 	[Property] public float CrouchMoveSpeed { get; set; } = 64.0f;
 	[Property] public float WalkMoveSpeed { get; set; } = 190.0f;
@@ -14,8 +17,6 @@ public sealed class PlayerController : Component
 	[Property, ShowIf(nameof(CustomEyeAngle), true)]
 	public Angles InitialEyeAngle { get; set; }
 	[Property] public bool UsePrefererredFov { get; set; } = false;
-	[Property, Range( 0, 100 )]
-	public float CameraSmoothing { get; set; } = 0f;
 
 	[Property] public CitizenAnimationHelper AnimationHelper { get; set; }
 
@@ -196,7 +197,7 @@ public sealed class PlayerController : Component
 			if ( !CharacterController.IsOnGround )
 			{
 				CharacterController.MoveTo( Transform.Position += Vector3.Up * DuckHeight, false );
-				Transform.ClearLerp();
+				Transform.ClearInterpolation();
 				EyeHeight -= DuckHeight;
 			}
 

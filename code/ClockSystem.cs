@@ -24,7 +24,7 @@ public class ClockSystem : GameObjectSystem
 
 	public ClockSystem( Scene scene ) : base( scene )
 	{
-		CurrentTime = new DateTime( 2024, 05, 07, 14, 50, 00 );
+		CurrentTime = new DateTime( 2024, 05, 07, 10, 00, 00 );
 		Listen( Stage.UpdateBones, 0, Tick, "Clock System Tick" );
 	}
 
