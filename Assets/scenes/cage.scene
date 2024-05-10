@@ -16,7 +16,7 @@
           "__type": "Sandbox.SkyBox2D",
           "__guid": "804ef44d-7150-4e34-920c-d6ba2a50c5e5",
           "SkyMaterial": "6.vmat",
-          "Tint": "0.00451,0.00448,0.00465,1"
+          "Tint": "1,1,1,1"
         },
         {
           "__type": "Ducc.RandomRotation",
@@ -2606,7 +2606,7 @@
                 "Name": "game",
                 "Id": "b865f7e3-a53b-48f6-86f2-418286c7e92b"
               },
-              "VolumeScale": 0.2
+              "VolumeScale": 1
             }
           ],
           "Children": [
@@ -4251,7 +4251,7 @@
             },
             {
               "x": 0.25,
-              "y": 0.20161706,
+              "y": 0.20161705,
               "in": -1.3139582,
               "out": 1.3139582
             },
@@ -4269,7 +4269,7 @@
             },
             {
               "x": 0.72321427,
-              "y": 0.8881927
+              "y": 0.8881928
             },
             {
               "x": 0.8556548,
@@ -5053,7 +5053,7 @@
   },
   "Title": "cage",
   "Description": "",
-  "LastSaved": "2024-05-10T08:00:04.2221206-06:00",
+  "LastSaved": "2024-05-10T10:55:35.926068-06:00",
   "ResourceVersion": 1,
   "__version": 1,
   "__references": [
