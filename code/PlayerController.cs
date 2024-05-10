@@ -11,9 +11,11 @@ public sealed class PlayerController : Component
 	[Property] public float SprintMoveSpeed { get; set; } = 320.0f;
 
 	[Property] public bool CustomEyeAngle { get; set; } = false;
-	[Property, ShowIf(nameof(CustomEyeAngle), true)] 
+	[Property, ShowIf(nameof(CustomEyeAngle), true)]
 	public Angles InitialEyeAngle { get; set; }
 	[Property] public bool UsePrefererredFov { get; set; } = false;
+	[Property, Range( 0, 100 )]
+	public float CameraSmoothing { get; set; } = 0f;
 
 	[Property] public CitizenAnimationHelper AnimationHelper { get; set; }
 
@@ -36,7 +38,6 @@ public sealed class PlayerController : Component
 		if ( !IsProxy )
 		{
 			MouseInput();
-			Transform.Rotation = new Angles( 0, EyeAngles.yaw, 0 );
 		}
 
 		UpdateAnimation();
@@ -47,6 +48,7 @@ public sealed class PlayerController : Component
 		if ( IsProxy )
 			return;
 
+		Transform.Rotation = new Angles( 0, EyeAngles.yaw, 0 );
 		CrouchingInput();
 		MovementInput();
 	}
@@ -219,7 +221,7 @@ public sealed class PlayerController : Component
 		var camera = Scene.GetAllComponents<CameraComponent>().Where( x => x.IsMainCamera ).FirstOrDefault();
 		if ( camera is null ) return;
 
-		var targetEyeHeight = Crouching ? 28 : 64;
+		var targetEyeHeight = Crouching ? 18 : 42;
 		EyeHeight = EyeHeight.LerpTo( targetEyeHeight, RealTime.Delta * 10.0f );
 
 		var targetCameraPos = Transform.Position + new Vector3( 0, 0, EyeHeight );
@@ -231,7 +233,15 @@ public sealed class PlayerController : Component
 		}
 
 		camera.Transform.Position = targetCameraPos;
-		camera.Transform.Rotation = EyeAngles;
+		if ( CameraSmoothing == 0f )
+		{
+			camera.Transform.Rotation = EyeAngles;
+		}
+		else
+		{
+			var smoothSpeed = CameraSmoothing.Remap( 0, 100, 30, 5 );
+			camera.Transform.Rotation = Rotation.Lerp( camera.Transform.Rotation, EyeAngles, Time.Delta * smoothSpeed );
+		}
 		if ( UsePrefererredFov )
 		{
 			camera.FieldOfView = Preferences.FieldOfView;
