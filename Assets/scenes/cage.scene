@@ -2611,6 +2611,7 @@
       "Name": "Player",
       "Position": "-34.36918,-117.4511,-0.000000794015",
       "Rotation": "0,0,0.5178721,0.8554581",
+      "Tags": "player",
       "Enabled": true,
       "NetworkMode": 2,
       "NetworkInterpolation": true,
@@ -5397,8 +5398,8 @@
                 "Id": 17,
                 "Type": "call",
                 "Properties": {
-                  "_name": "Launch",
                   "_type": "package.duccsoft.ducc_3/Ducc.PropLauncher",
+                  "_name": "Launch",
                   "_isStatic": false
                 },
                 "UserData": {
@@ -5491,8 +5492,8 @@
                 "Id": 3,
                 "Type": "call",
                 "Properties": {
-                  "_name": "SpawnOne",
                   "_type": "package.duccsoft.ducc_3/Ducc.FoxMiteSpawner",
+                  "_name": "SpawnOne",
                   "_isStatic": false
                 },
                 "UserData": {
@@ -5553,7 +5554,7 @@
   },
   "Title": "cage",
   "Description": "",
-  "LastSaved": "2024-05-12T11:26:42.4957754-06:00",
+  "LastSaved": "2024-05-12T14:24:31.619224-06:00",
   "ResourceVersion": 1,
   "__version": 1,
   "__references": [

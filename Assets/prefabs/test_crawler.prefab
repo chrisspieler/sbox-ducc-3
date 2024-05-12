@@ -1,33 +1,33 @@
 {
   "RootObject": {
-    "__guid": "eebb9f12-19a5-406b-aca6-bee7dfc4b17d",
+    "__guid": "107114a4-f36a-4936-8753-038d78c1948b",
     "Flags": 0,
-    "Name": "fox_mite",
-    "Scale": "0.005,0.02,0.004",
+    "Name": "test_crawler",
     "Enabled": true,
     "NetworkMode": 2,
     "NetworkInterpolation": true,
     "Components": [
       {
         "__type": "Sandbox.ModelRenderer",
-        "__guid": "1c847341-82f3-48c1-9b53-344ec82dd912",
+        "__guid": "b9401207-7bdd-4fbf-ac06-9b222953a87b",
         "BodyGroups": 18446744073709551615,
+        "MaterialOverride": "materials/dev/primary_white_emissive.vmat",
         "Model": "models/fox_rat/fox_rat.vmdl",
         "RenderType": "On",
-        "Tint": "0.06512,0.06512,0.06512,1"
+        "Tint": "0.27907,0.27907,0.27907,1"
       },
       {
         "__type": "Sandbox.Kinesis",
-        "__guid": "0031f2c8-74a9-4e81-bb46-732826b6c17d",
+        "__guid": "7d2106e4-e454-43d6-a50e-2498ca57f660",
         "Comfort": 0,
-        "HighRotation": 720,
-        "HighSpeed": 8,
-        "LowRotation": 90,
-        "LowSpeed": 0.5,
+        "HighRotation": 0,
+        "HighSpeed": 100,
+        "LowRotation": 0,
+        "LowSpeed": 100,
         "Speed": 0,
-        "TraceDownDistance": 0.7,
-        "TraceForwardDistance": 1,
-        "TraceHeight": 0.5
+        "TraceDownDistance": 12,
+        "TraceForwardDistance": 30,
+        "TraceHeight": 10
       }
     ],
     "Children": []
