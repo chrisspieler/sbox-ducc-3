@@ -5397,9 +5397,9 @@
                 "Id": 17,
                 "Type": "call",
                 "Properties": {
+                  "_name": "Launch",
                   "_type": "package.duccsoft.ducc_3/Ducc.PropLauncher",
-                  "_isStatic": false,
-                  "_name": "Launch"
+                  "_isStatic": false
                 },
                 "UserData": {
                   "Position": "192,0"
@@ -5434,6 +5434,100 @@
           "RollRate": 5
         }
       ]
+    },
+    {
+      "__guid": "3e0e95db-28fb-429f-8874-742fda1cccdc",
+      "Flags": 0,
+      "Name": "Mite Spawner",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "Components": [
+        {
+          "__type": "Ducc.FoxMiteSpawner",
+          "__guid": "1785fa19-6ecc-4dd9-bff7-aa75e3407b71",
+          "MaxMites": 250,
+          "MiteCount": 0,
+          "Prefab": {
+            "_type": "gameobject",
+            "prefab": "prefabs/fox_mite.prefab"
+          },
+          "SpawnBounds": {
+            "Mins": "-60,-150,0",
+            "Maxs": "140,200,0"
+          }
+        },
+        {
+          "__type": "Ducc.RandomEvent",
+          "__guid": "13f05b06-41cb-4ecb-bf54-ab2247be5744",
+          "OnEventStart": {
+            "__version": 7,
+            "__guid": "33c69ef3-f980-4f4e-8873-9982be2a089e",
+            "UserData": {
+              "Title": "On Event Start"
+            },
+            "Variables": [],
+            "Nodes": [
+              {
+                "Id": 0,
+                "Type": "input"
+              },
+              {
+                "Id": 2,
+                "Type": "scene.ref",
+                "Properties": {
+                  "component": {
+                    "_type": "component",
+                    "component_id": "1785fa19-6ecc-4dd9-bff7-aa75e3407b71",
+                    "go": "3e0e95db-28fb-429f-8874-742fda1cccdc",
+                    "component_type": "FoxMiteSpawner"
+                  }
+                },
+                "UserData": {
+                  "Position": "-96,112"
+                }
+              },
+              {
+                "Id": 3,
+                "Type": "call",
+                "Properties": {
+                  "_name": "SpawnOne",
+                  "_type": "package.duccsoft.ducc_3/Ducc.FoxMiteSpawner",
+                  "_isStatic": false
+                },
+                "UserData": {
+                  "Position": "192,0"
+                }
+              }
+            ],
+            "Links": [
+              {
+                "SrcId": 0,
+                "SrcName": "_signal",
+                "DstId": 3,
+                "DstName": "_signal"
+              },
+              {
+                "SrcId": 2,
+                "SrcName": "_result",
+                "DstId": 3,
+                "DstName": "_target"
+              }
+            ],
+            "Defaults": {
+              "$2.component": {
+                "_type": "component",
+                "component_id": "1785fa19-6ecc-4dd9-bff7-aa75e3407b71",
+                "go": "3e0e95db-28fb-429f-8874-742fda1cccdc",
+                "component_type": "FoxMiteSpawner"
+              }
+            }
+          },
+          "Rarity": 0,
+          "Recurring": true,
+          "RollRate": 0.1
+        }
+      ]
     }
   ],
   "SceneProperties": {
@@ -5459,7 +5553,7 @@
   },
   "Title": "cage",
   "Description": "",
-  "LastSaved": "2024-05-12T07:53:05.5699579-06:00",
+  "LastSaved": "2024-05-12T11:26:42.4957754-06:00",
   "ResourceVersion": 1,
   "__version": 1,
   "__references": [

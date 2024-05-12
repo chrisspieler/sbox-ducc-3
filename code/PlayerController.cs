@@ -2,7 +2,7 @@ using Sandbox.Citizen;
 
 [Group( "Walker" )]
 [Title( "Walker - Player Controller" )]
-public sealed class PlayerController : Component
+public sealed partial class PlayerController : Component
 {
 	[ConVar("camera_smoothing")]
 	public static float CameraSmoothing { get; set; } = 0f;
@@ -29,6 +29,7 @@ public sealed class PlayerController : Component
 
 	protected override void OnStart()
 	{
+		_instance = this;
 		EyeAngles = CustomEyeAngle 
 			? InitialEyeAngle
 			: Transform.Rotation;
