@@ -4272,12 +4272,16 @@
             "go": "cd4ebad3-fe90-4e6b-ba63-1b0448c6a6c4",
             "component_type": "RandomLightFlicker"
           },
+          "FlickerToggleEndValue": 10,
+          "FlickerToggleStartValue": 20,
           "Light": {
             "_type": "component",
             "component_id": "2c88d150-3d65-4537-a33d-460e4ce79fad",
             "go": "cd4ebad3-fe90-4e6b-ba63-1b0448c6a6c4",
             "component_type": "LightBulb"
-          }
+          },
+          "LightToggleEndValue": 10,
+          "LightToggleStartValue": 10000
         }
       ],
       "Children": [
@@ -5335,6 +5339,101 @@
           "Shadows": true
         }
       ]
+    },
+    {
+      "__guid": "7c6fad46-79f9-46b1-8ba4-a3796ff2b526",
+      "Flags": 0,
+      "Name": "Ducc Spawner",
+      "Position": "-40,160,232",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "Components": [
+        {
+          "__type": "Ducc.PropLauncher",
+          "__guid": "943007e5-eabc-4537-8819-939f0719b2f6",
+          "VelocityScale": "500.00,750.00,1",
+          "AngleJitter": 5,
+          "AngularVelocityScale": 20,
+          "PropPrefab": {
+            "_type": "gameobject",
+            "prefab": "prefabs/wild_ducc.prefab"
+          },
+          "SelfDestructTime": 2,
+          "VelocityDirection": "0,-1,0.5"
+        },
+        {
+          "__type": "Ducc.RandomEvent",
+          "__guid": "5d5a03d8-690e-4ee5-b01e-639a37a3f420",
+          "OnEventStart": {
+            "__version": 7,
+            "__guid": "961f8098-4964-4f02-ab36-ac7bf7fd674b",
+            "UserData": {
+              "Title": "On Event Start",
+              "ReferencedComponentTypes": []
+            },
+            "Variables": [],
+            "Nodes": [
+              {
+                "Id": 0,
+                "Type": "input"
+              },
+              {
+                "Id": 2,
+                "Type": "scene.ref",
+                "Properties": {
+                  "component": {
+                    "_type": "component",
+                    "component_id": "943007e5-eabc-4537-8819-939f0719b2f6",
+                    "go": "7c6fad46-79f9-46b1-8ba4-a3796ff2b526",
+                    "component_type": "PropLauncher"
+                  }
+                },
+                "UserData": {
+                  "Position": "-80,96"
+                }
+              },
+              {
+                "Id": 17,
+                "Type": "call",
+                "Properties": {
+                  "_type": "package.duccsoft.ducc_3/Ducc.PropLauncher",
+                  "_isStatic": false,
+                  "_name": "Launch"
+                },
+                "UserData": {
+                  "Position": "192,0"
+                }
+              }
+            ],
+            "Links": [
+              {
+                "SrcId": 0,
+                "SrcName": "_signal",
+                "DstId": 17,
+                "DstName": "_signal"
+              },
+              {
+                "SrcId": 2,
+                "SrcName": "_result",
+                "DstId": 17,
+                "DstName": "_target"
+              }
+            ],
+            "Defaults": {
+              "$2.component": {
+                "_type": "component",
+                "component_id": "943007e5-eabc-4537-8819-939f0719b2f6",
+                "go": "7c6fad46-79f9-46b1-8ba4-a3796ff2b526",
+                "component_type": "PropLauncher"
+              }
+            }
+          },
+          "Rarity": 250,
+          "Recurring": true,
+          "RollRate": 5
+        }
+      ]
     }
   ],
   "SceneProperties": {
@@ -5360,7 +5459,7 @@
   },
   "Title": "cage",
   "Description": "",
-  "LastSaved": "2024-05-12T06:52:16.5173873-06:00",
+  "LastSaved": "2024-05-12T07:53:05.5699579-06:00",
   "ResourceVersion": 1,
   "__version": 1,
   "__references": [

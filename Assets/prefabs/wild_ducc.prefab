@@ -1,0 +1,73 @@
+{
+  "RootObject": {
+    "__guid": "d1777fed-9b84-4b14-814e-bd07d4061fff",
+    "Flags": 0,
+    "Name": "wild_ducc",
+    "Enabled": true,
+    "NetworkMode": 2,
+    "NetworkInterpolation": true,
+    "Components": [
+      {
+        "__type": "Sandbox.ModelRenderer",
+        "__guid": "df434fc0-a745-4c4a-a788-18e840763db5",
+        "BodyGroups": 18446744073709551615,
+        "Model": "models/duck_decoration/duck_decoration.vmdl",
+        "RenderType": "On",
+        "Tint": "1,1,1,1"
+      },
+      {
+        "__type": "Sandbox.ModelCollider",
+        "__guid": "a90a0c6d-f39d-4bcc-b352-68cf4dd2a8b6",
+        "IsTrigger": false,
+        "Model": "models/duck_decoration/duck_decoration.vmdl",
+        "Static": false
+      },
+      {
+        "__type": "Sandbox.Rigidbody",
+        "__guid": "90287e04-5c16-4f82-85d4-c7dee0a00aa7",
+        "AngularDamping": 0,
+        "Gravity": true,
+        "LinearDamping": 0,
+        "Locking": {},
+        "MassOverride": 0,
+        "MotionEnabled": true,
+        "RigidbodyFlags": "DisableCollisionSounds",
+        "StartAsleep": false
+      },
+      {
+        "__type": "Sandbox.SoundPointComponent",
+        "__guid": "125d3eb3-432a-42a7-bbe2-9ce72dd93326",
+        "DistanceAttenuation": false,
+        "DistanceAttenuationOverride": false,
+        "Force2d": false,
+        "MaxRepeatTime": 1,
+        "MinRepeatTime": 1,
+        "Occlusion": false,
+        "OcclusionOverride": false,
+        "OcclusionRadius": 32,
+        "Pitch": 1,
+        "PlayOnStart": true,
+        "ReflectionOverride": false,
+        "Reflections": false,
+        "Repeat": false,
+        "SoundEvent": "sounds/flying_quack.sound",
+        "SoundOverride": false,
+        "StopOnNew": false,
+        "TargetMixer": {
+          "Name": "game",
+          "Id": "b865f7e3-a53b-48f6-86f2-418286c7e92b"
+        },
+        "Volume": 1
+      }
+    ],
+    "Children": []
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "ResourceVersion": 1,
+  "__version": 1,
+  "__references": [
+    "duccsoft.duck_decoration"
+  ]
+}
