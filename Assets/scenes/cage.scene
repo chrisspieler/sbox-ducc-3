@@ -3150,7 +3150,7 @@
                                             },
                                             {
                                               "__guid": "295e245f-ce8b-4a4a-94fd-5f8b5b24b03b",
-                                              "Flags": 4,
+                                              "Flags": 0,
                                               "Name": "hand_R_to_L_ikrule",
                                               "Position": "-28.15187,11.30968,27.26416",
                                               "Rotation": "-0.2772723,-0.6901742,-0.0000000204891,0.668416",
@@ -3436,7 +3436,7 @@
                                             },
                                             {
                                               "__guid": "158839d6-5d0d-4778-87ec-738c4297b2be",
-                                              "Flags": 4,
+                                              "Flags": 0,
                                               "Name": "hand_L_to_R_ikrule",
                                               "Position": "-28.15179,11.30985,-27.26431",
                                               "Rotation": "0.2772729,0.6901739,0.0000002700835,0.6684159",
@@ -3983,7 +3983,7 @@
             },
             {
               "__guid": "dafec17e-7a46-4f5e-a047-3918824870c9",
-              "Flags": 4,
+              "Flags": 0,
               "Name": "root_IK",
               "Position": "1.266572,0.000004768372,0",
               "Enabled": true,
@@ -3992,7 +3992,7 @@
               "Children": [
                 {
                   "__guid": "ea7512eb-d388-4693-8462-c847bc489c66",
-                  "Flags": 4,
+                  "Flags": 0,
                   "Name": "hand_R_IK_target",
                   "Position": "0.6939819,-20.39473,39.24799",
                   "Rotation": "0.2871271,0.2142481,-0.5281312,0.7698917",
@@ -4002,7 +4002,7 @@
                 },
                 {
                   "__guid": "aec1d824-dbc0-48d1-85dd-ce8a0c2d8a97",
-                  "Flags": 4,
+                  "Flags": 0,
                   "Name": "hand_L_IK_target",
                   "Position": "0.6941168,20.3947,39.24792",
                   "Rotation": "0.7698929,0.5281297,-0.2142482,0.2871265",
@@ -4012,7 +4012,7 @@
                 },
                 {
                   "__guid": "00d51719-cd0a-4c26-b8ac-0085a314487e",
-                  "Flags": 4,
+                  "Flags": 0,
                   "Name": "aim_matrix_02a",
                   "Position": "4.638925,-0.000001072884,9.8425",
                   "Enabled": true,
@@ -4021,7 +4021,7 @@
                   "Children": [
                     {
                       "__guid": "68b3443f-7f8d-4e1c-9cf2-781a7c371daa",
-                      "Flags": 4,
+                      "Flags": 0,
                       "Name": "aim_matrix_02b",
                       "Position": "3.937005,0.000000119209,-0.00000143021",
                       "Enabled": true,
@@ -4032,7 +4032,7 @@
                 },
                 {
                   "__guid": "d04a0b41-1f0c-4e48-bc37-1976d066d055",
-                  "Flags": 4,
+                  "Flags": 0,
                   "Name": "aim_matrix_01",
                   "Position": "4.638925,-0.000001072884,11.811",
                   "Enabled": true,
@@ -4041,7 +4041,7 @@
                 },
                 {
                   "__guid": "5df5934c-4d5c-45f0-a163-64aa2d470a1a",
-                  "Flags": 4,
+                  "Flags": 0,
                   "Name": "foot_R_IK_target",
                   "Position": "-0.8840667,-4.427395,3.807913",
                   "Rotation": "0.6508947,0.2762884,-0.2762875,0.6508964",
@@ -4051,7 +4051,7 @@
                 },
                 {
                   "__guid": "f4e9f63a-1fb5-4a41-ad57-8f9577e541d7",
-                  "Flags": 4,
+                  "Flags": 0,
                   "Name": "foot_L_IK_target",
                   "Position": "-0.8840939,4.427402,3.807924",
                   "Rotation": "0.6508961,0.276287,-0.2762894,0.6508948",
@@ -5360,7 +5360,7 @@
   },
   "Title": "cage",
   "Description": "",
-  "LastSaved": "2024-05-11T21:32:28.1421448-06:00",
+  "LastSaved": "2024-05-12T06:52:16.5173873-06:00",
   "ResourceVersion": 1,
   "__version": 1,
   "__references": [
