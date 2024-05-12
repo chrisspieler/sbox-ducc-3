@@ -20,7 +20,6 @@ public class RandomLightController : Component
 	{
 		if ( _untilNextEventTick )
 		{
-			Log.Info( "Event Tick" );
 			RollLightToggle();
 			RollFlickerToggle();
 			_untilNextEventTick = 5f;
