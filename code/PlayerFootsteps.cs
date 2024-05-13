@@ -8,6 +8,7 @@ public sealed class PlayerFootsteps : Component
 	[Property] SkinnedModelRenderer Source { get; set; }
 	[Property] MixerHandle TargetMixer { get; set; }
 	[Property] public float VolumeScale { get; set; } = 1f;
+	[Property] public bool WithInputOnly { get; set; } = false;
 
 	protected override void OnEnabled()
 	{
@@ -47,8 +48,8 @@ public sealed class PlayerFootsteps : Component
 
 	private void OnEvent( SceneModel.FootstepEvent e )
 	{
-		// Hearing footsteps when stopped sounds freaky.
-		if ( _timeSinceLanding > 0.25f && Input.AnalogMove.Length < 0.1f )
+		// Hearing your own footsteps when stopped sounds freaky.
+		if ( WithInputOnly && _timeSinceLanding > 0.25f && Input.AnalogMove.Length < 0.1f )
 		{
 			return;
 		}

@@ -1,0 +1,306 @@
+{
+  "__guid": "2615e1fb-ffa1-44f7-ae51-55f586f3a400",
+  "GameObjects": [
+    {
+      "__guid": "cc2ba8fb-9481-458a-bceb-61443c7c61d4",
+      "Flags": 0,
+      "Name": "Sun",
+      "Rotation": "-0.1503529,0.4768585,0.2604189,0.8259431",
+      "Tags": "light_directional,light",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "Components": [
+        {
+          "__type": "Sandbox.DirectionalLight",
+          "__guid": "7a61ff79-b78f-4d8a-a9c0-c30f009e92cf",
+          "FogMode": "Enabled",
+          "FogStrength": 1,
+          "LightColor": "0.91373,0.98039,1,1",
+          "Shadows": true,
+          "SkyColor": "0.05882,0.07451,0.08235,1"
+        }
+      ]
+    },
+    {
+      "__guid": "e2ed2b2f-d5be-4715-be5c-94b1d7694772",
+      "Flags": 0,
+      "Name": "Box",
+      "Position": "-0.00001525879,20,28",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "Components": [
+        {
+          "__type": "Sandbox.MeshComponent",
+          "__guid": "c4d7b1cc-8433-4195-a1a5-5e7ec9a2c500",
+          "Collision": "Mesh",
+          "Color": "1,1,1,1",
+          "IsTrigger": false,
+          "Mesh": {
+            "Topology": "H4sIAAAAAAAACl2Qiw6CUAxDh1flgg/wAfr/X2pP0iWLJA25W9t16xHxFc4C30E4\u002Bt2FWbgKd2Ew4NTvIZxcb9ZH4b5db\u002Bb9z/oUzVh8m7lPc9FOzjRYQ8ZXyXxxXvrw4e72wvtWdoEPdzMXj8We9OHDXcvO7EqdN396eKaeLHjkLciePeYxi4z0mMFtMisablFvRXZ2Tj158KQOF78f9WSROMQBAAA=",
+            "Positions": [
+              "192,172,-28",
+              "-288,172,-28",
+              "-288,-244,-28",
+              "192,-244,-28",
+              "192,-244,188",
+              "-288,-244,188",
+              "-288,172,188",
+              "192,172,188"
+            ],
+            "TextureOrigin": [
+              "-0.00001525879,20,28",
+              "-0.00001525879,20,28",
+              "-0.00001525879,20,28",
+              "-0.00001525879,20,28",
+              "-0.00001525879,20,28",
+              "-0.00001525879,20,28"
+            ],
+            "TextureRotation": [
+              "0,0,0,1",
+              "0,0,0,1",
+              "0,0,0,1",
+              "0,0,0,1",
+              "0,0,0,1",
+              "0,0,0,1"
+            ],
+            "TextureUAxis": [
+              "1,0,0",
+              "1,0,0",
+              "0,-1,0",
+              "0,1,0",
+              "-1,0,0",
+              "1,0,0"
+            ],
+            "TextureVAxis": [
+              "0,-1,0",
+              "0,-1,0",
+              "0,0,-1",
+              "0,0,-1",
+              "0,0,-1",
+              "0,0,-1"
+            ],
+            "TextureScale": [
+              "0.25,0.25",
+              "0.25,0.25",
+              "0.25,0.25",
+              "0.25,0.25",
+              "0.25,0.25",
+              "0.25,0.25"
+            ],
+            "TextureOffset": [
+              "0,0",
+              "0,0",
+              "0,0",
+              "0,0",
+              "0,0",
+              "0,0"
+            ],
+            "TextureAngle": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "MaterialIndex": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "EdgeFlags": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "Materials": [
+              "materials/dev/dev_measuregeneric01b.vmat"
+            ]
+          },
+          "SmoothingAngle": 40,
+          "Static": false
+        }
+      ]
+    },
+    {
+      "__guid": "cf367f9a-75a5-41d5-b23d-abd949a85ff8",
+      "Flags": 0,
+      "Name": "Sausage Walker",
+      "Tags": "sausage",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/sausage.prefab"
+    },
+    {
+      "__guid": "9141df19-c4c3-4747-87ff-1ae889c07bab",
+      "Flags": 0,
+      "Name": "Sausage Controller",
+      "Position": "-81.02962,-107.2533,89.36926",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "Components": [
+        {
+          "__type": "Ducc.SausageDirectControl",
+          "__guid": "21bf40c0-f304-40a4-9906-6fe24012ecc8",
+          "Controller": {
+            "_type": "component",
+            "component_id": "9343386e-2e42-4287-ab46-00bd8fc8bd76",
+            "go": "cf367f9a-75a5-41d5-b23d-abd949a85ff8",
+            "component_type": "SausageController"
+          }
+        }
+      ]
+    },
+    {
+      "__guid": "ee795c55-101e-4090-b547-4fa0b95d1bbc",
+      "Flags": 0,
+      "Name": "Camera",
+      "Position": "-428.1998,-400.1789,216.1351",
+      "Rotation": "-0.06679279,0.1596716,0.3800854,0.9086137",
+      "Tags": "maincamera",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "Components": [
+        {
+          "__type": "Sandbox.CameraComponent",
+          "__guid": "f9285687-2a6e-46f9-8939-80a4e0e7cce2",
+          "BackgroundColor": "0.33333,0.46275,0.52157,1",
+          "ClearFlags": "All",
+          "FieldOfView": 90,
+          "IsMainCamera": true,
+          "Orthographic": false,
+          "OrthographicHeight": 1204,
+          "Priority": 1,
+          "RenderExcludeTags": "",
+          "RenderTags": "",
+          "TargetEye": "None",
+          "Viewport": "0,0,1,1",
+          "ZFar": 10000,
+          "ZNear": 10
+        }
+      ]
+    },
+    {
+      "__guid": "91c5ca1c-b913-4bd1-b180-e7b34a1a5c20",
+      "Flags": 0,
+      "Name": "Attention",
+      "Position": "-224,32,0.0000161673",
+      "Scale": "0.2,0.2,0.2",
+      "Tags": "trigger",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "Components": [
+        {
+          "__type": "Sandbox.ModelRenderer",
+          "__guid": "91c5fd44-82b7-42b1-b8bb-0dd410061c4b",
+          "BodyGroups": 18446744073709551615,
+          "Model": "models/dev/box.vmdl",
+          "RenderType": "On",
+          "Tint": "0,0,1,1"
+        },
+        {
+          "__type": "Ducc.AttentionGrabber",
+          "__guid": "a77b8961-3324-4a81-87de-87dd9ff185cd"
+        },
+        {
+          "__type": "Sandbox.SphereCollider",
+          "__guid": "a8553866-da91-49b8-ae5e-b0532c618197",
+          "Center": "0,0,0",
+          "IsTrigger": true,
+          "Radius": 400,
+          "Static": false
+        }
+      ]
+    },
+    {
+      "__guid": "bdf44a1a-419d-448b-821c-ddad7209df1c",
+      "Flags": 0,
+      "Name": "Attention (1)",
+      "Position": "-96,-160,0.00002345738",
+      "Scale": "0.2,0.2,0.2",
+      "Tags": "trigger",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "Components": [
+        {
+          "__type": "Sandbox.ModelRenderer",
+          "__guid": "e3cbaffd-eae5-4df9-9e4f-f40c2ed3d654",
+          "BodyGroups": 18446744073709551615,
+          "Model": "models/dev/box.vmdl",
+          "RenderType": "On",
+          "Tint": "1,0,0,1"
+        },
+        {
+          "__type": "Ducc.AttentionGrabber",
+          "__guid": "6e2b3996-cea1-4f6a-909e-020660b72552"
+        },
+        {
+          "__type": "Sandbox.SphereCollider",
+          "__guid": "846782f2-5c87-4903-aaa1-3e1ff06c8499",
+          "Center": "0,0,0",
+          "IsTrigger": true,
+          "Radius": 400,
+          "Static": false
+        }
+      ]
+    }
+  ],
+  "SceneProperties": {
+    "FixedUpdateFrequency": 50,
+    "MaxFixedUpdates": 5,
+    "NetworkFrequency": 30,
+    "NetworkInterpolation": true,
+    "ThreadedAnimation": true,
+    "TimeScale": 1,
+    "UseFixedUpdate": true,
+    "NavMesh": {
+      "Enabled": false,
+      "IncludeStaticBodies": true,
+      "IncludeKeyframedBodies": true,
+      "EditorAutoUpdate": true,
+      "AgentHeight": 64,
+      "AgentRadius": 16,
+      "AgentStepSize": 18,
+      "AgentMaxSlope": 40,
+      "ExcludedBodies": "",
+      "IncludedBodies": ""
+    }
+  },
+  "Title": "test_sausage",
+  "Description": "",
+  "LastSaved": "2024-05-13T16:03:12.889876-06:00",
+  "ResourceVersion": 1,
+  "__version": 1,
+  "__references": []
+}

@@ -22,6 +22,19 @@
     "LeaderboardType": "None",
     "CsProjName": "",
     "StartupScene": "scenes/cage.scene",
-    "LaunchMode": "Normal"
+    "LaunchMode": "Normal",
+    "Compiler": {
+      "RootNamespace": "Ducc",
+      "DefineConstants": "SANDBOX;ADDON;DEBUG",
+      "NoWarn": "1701;1702;1591;",
+      "WarningsAsErrors": "",
+      "Whitelist": true,
+      "AssemblyReferences": [],
+      "IgnoreFolders": [
+        "editor",
+        "unittest"
+      ],
+      "DistinctAssemblyReferences": []
+    }
   }
 }
