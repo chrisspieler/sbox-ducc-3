@@ -5396,6 +5396,7 @@
         {
           "__type": "Ducc.RandomEvent",
           "__guid": "5d5a03d8-690e-4ee5-b01e-639a37a3f420",
+          "EffectiveRarity": 0,
           "OnEventStart": {
             "__version": 7,
             "__guid": "961f8098-4964-4f02-ab36-ac7bf7fd674b",
@@ -5428,9 +5429,9 @@
                 "Id": 17,
                 "Type": "call",
                 "Properties": {
+                  "_isStatic": false,
                   "_name": "Launch",
-                  "_type": "package.duccsoft.ducc_3/Ducc.PropLauncher",
-                  "_isStatic": false
+                  "_type": "Ducc.PropLauncher"
                 },
                 "UserData": {
                   "Position": "192,0"
@@ -5462,7 +5463,11 @@
           },
           "Rarity": 250,
           "Recurring": true,
-          "RollRate": 5
+          "RollRate": 5,
+          "TimeCurve": {
+            "rangex": "0,0",
+            "rangey": "0,0"
+          }
         }
       ]
     },
@@ -5491,6 +5496,7 @@
         {
           "__type": "Ducc.RandomEvent",
           "__guid": "13f05b06-41cb-4ecb-bf54-ab2247be5744",
+          "EffectiveRarity": 0,
           "OnEventStart": {
             "__version": 7,
             "__guid": "33c69ef3-f980-4f4e-8873-9982be2a089e",
@@ -5522,9 +5528,9 @@
                 "Id": 3,
                 "Type": "call",
                 "Properties": {
+                  "_isStatic": false,
                   "_name": "SpawnOne",
-                  "_type": "package.duccsoft.ducc_3/Ducc.FoxMiteSpawner",
-                  "_isStatic": false
+                  "_type": "Ducc.FoxMiteSpawner"
                 },
                 "UserData": {
                   "Position": "192,0"
@@ -5556,7 +5562,11 @@
           },
           "Rarity": 0,
           "Recurring": true,
-          "RollRate": 0.1
+          "RollRate": 0.1,
+          "TimeCurve": {
+            "rangex": "0,0",
+            "rangey": "0,0"
+          }
         }
       ]
     },
@@ -5569,16 +5579,102 @@
       "Enabled": true,
       "NetworkMode": 2,
       "NetworkInterpolation": true,
-      "Children": [
+      "Components": [
         {
-          "__guid": "cd007bc4-ff32-4065-9662-a1f3faa31605",
-          "Flags": 0,
-          "Name": "Sausage Walker",
-          "Position": "0.0001220703,0.00000000002182787,0",
-          "Enabled": true,
-          "NetworkMode": 2,
-          "NetworkInterpolation": true,
-          "__Prefab": "prefabs/sausage.prefab"
+          "__type": "Ducc.RandomEvent",
+          "__guid": "9c01187f-cc9e-4ce7-93b4-5715fe78077e",
+          "EffectiveRarity": 99,
+          "OnEventStart": {
+            "__version": 7,
+            "__guid": "d2a4142d-42e5-4688-a093-1ee760d47292",
+            "UserData": {
+              "Title": "On Event Start",
+              "ReferencedComponentTypes": []
+            },
+            "Variables": [],
+            "Nodes": [
+              {
+                "Id": 0,
+                "Type": "input"
+              },
+              {
+                "Id": 1,
+                "Type": "Sausage.Spawn",
+                "UserData": {
+                  "Position": "208,-0"
+                }
+              },
+              {
+                "Id": 2,
+                "Type": "property",
+                "Properties": {
+                  "_name": "Transform",
+                  "_type": "Sandbox.GameObject"
+                },
+                "UserData": {
+                  "Position": "-48,-128"
+                }
+              },
+              {
+                "Id": 3,
+                "Type": "property",
+                "ParentId": 2,
+                "Properties": {
+                  "_name": "World",
+                  "_type": "Sandbox.GameTransform"
+                }
+              }
+            ],
+            "Links": [
+              {
+                "SrcId": 0,
+                "SrcName": "_signal",
+                "DstId": 1,
+                "DstName": "_signal"
+              },
+              {
+                "Value": "0,1,0",
+                "DstId": 1,
+                "DstName": "heading"
+              },
+              {
+                "SrcId": 3,
+                "SrcName": "_result",
+                "DstId": 1,
+                "DstName": "worldTx"
+              },
+              {
+                "SrcId": 0,
+                "SrcName": "_target",
+                "DstId": 2,
+                "DstName": "_target"
+              },
+              {
+                "SrcId": 2,
+                "SrcName": "_result",
+                "DstId": 3,
+                "DstName": "_target"
+              }
+            ]
+          },
+          "Rarity": 100,
+          "Recurring": true,
+          "RollRate": 5,
+          "TimeCurve": [
+            {
+              "y": 1
+            },
+            {
+              "x": 0.50297624,
+              "y": 0.05851064,
+              "in": -0.019607456,
+              "out": 0.019607456
+            },
+            {
+              "x": 1,
+              "y": 1
+            }
+          ]
         }
       ]
     },
@@ -6246,16 +6342,100 @@
       "Enabled": true,
       "NetworkMode": 2,
       "NetworkInterpolation": true,
-      "Children": [
+      "Components": [
         {
-          "__guid": "3e6079b2-9e0a-4e02-8c5b-8e329310d2d2",
-          "Flags": 0,
-          "Name": "Sausage Walker (1)",
-          "Position": "0.0001220703,0.00002288817,0",
-          "Enabled": true,
-          "NetworkMode": 2,
-          "NetworkInterpolation": true,
-          "__Prefab": "prefabs/sausage.prefab"
+          "__type": "Ducc.RandomEvent",
+          "__guid": "cfddd574-e904-4525-ae8a-ec03e730fc7d",
+          "EffectiveRarity": 49,
+          "OnEventStart": {
+            "__version": 7,
+            "__guid": "437ed5fc-f949-4664-a86f-620ff926e2ec",
+            "UserData": {
+              "Title": "On Event Start",
+              "ReferencedComponentTypes": []
+            },
+            "Variables": [],
+            "Nodes": [
+              {
+                "Id": 0,
+                "Type": "input"
+              },
+              {
+                "Id": 1,
+                "Type": "property",
+                "Properties": {
+                  "_name": "Transform",
+                  "_type": "Sandbox.GameObject"
+                },
+                "UserData": {
+                  "Position": "-48,-128"
+                }
+              },
+              {
+                "Id": 2,
+                "Type": "property",
+                "ParentId": 1,
+                "Properties": {
+                  "_name": "World",
+                  "_type": "Sandbox.GameTransform"
+                }
+              },
+              {
+                "Id": 4,
+                "Type": "Sausage.Spawn",
+                "UserData": {
+                  "Position": "192,0"
+                }
+              }
+            ],
+            "Links": [
+              {
+                "SrcId": 0,
+                "SrcName": "_target",
+                "DstId": 1,
+                "DstName": "_target"
+              },
+              {
+                "SrcId": 1,
+                "SrcName": "_result",
+                "DstId": 2,
+                "DstName": "_target"
+              },
+              {
+                "SrcId": 0,
+                "SrcName": "_signal",
+                "DstId": 4,
+                "DstName": "_signal"
+              },
+              {
+                "Value": "0,-1,0",
+                "DstId": 4,
+                "DstName": "heading"
+              },
+              {
+                "SrcId": 2,
+                "SrcName": "_result",
+                "DstId": 4,
+                "DstName": "worldTx"
+              }
+            ]
+          },
+          "Rarity": 50,
+          "Recurring": true,
+          "RollRate": 5,
+          "TimeCurve": [
+            {
+              "y": 1
+            },
+            {
+              "x": 0.50595236,
+              "y": 0.15425532
+            },
+            {
+              "x": 1,
+              "y": 1
+            }
+          ]
         }
       ]
     },
@@ -6329,7 +6509,7 @@
   },
   "Title": "cage",
   "Description": "",
-  "LastSaved": "2024-05-13T17:12:20.3173663-06:00",
+  "LastSaved": "2024-05-14T15:33:25.5604592-06:00",
   "ResourceVersion": 1,
   "__version": 1,
   "__references": [

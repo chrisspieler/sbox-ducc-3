@@ -21,6 +21,15 @@ public class RandomEvent : Component
 	/// </summary>
 	[Property] public int Rarity { get; set; } = 100;
 	/// <summary>
+	/// The likelihood of an event occurring will be scaled by the current <see cref="ClockSystem.DayProgress"/>
+	/// as evaluated by this curve.
+	/// </summary>
+	[Property] public Curve TimeCurve { get; set; }
+	/// <summary>
+	/// The rarity that will be used given the current <see cref="ClockSystem.DayProgress"/> and <see cref="TimeCurve"/>.
+	/// </summary>
+	[Property] public int EffectiveRarity => (int)(Rarity * TimeCurve.Evaluate( ClockSystem.DayProgress ));
+	/// <summary>
 	/// The number of seconds that shall elapse between attempts to roll the event.
 	/// </summary>
 	[Property] public float RollRate { get; set; } = 5f;
@@ -48,7 +57,14 @@ public class RandomEvent : Component
 	[Button("Roll Event")]
 	private void RollEvent()
 	{
-		if ( 0 != Game.Random.Int( Rarity ) )
+		var rarity = Rarity;
+		// The curve is meaningless if it has only one point.
+		if ( TimeCurve.Frames.Count > 1 )
+		{
+			// Use the curve to make the event more or less likely at different times.
+			rarity = EffectiveRarity;
+		}
+		if ( 0 != Game.Random.Int( rarity ) )
 			return;
 
 		StartEvent();
