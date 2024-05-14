@@ -1,0 +1,9 @@
+{
+  "Name": "Armor 2",
+  "CharacteristicItems": [
+    "models/citizen_clothes/full_outfit/medieval_armour/medieval_armour.clothing"
+  ],
+  "SupplementaryItems": [],
+  "__version": 0,
+  "__references": []
+}

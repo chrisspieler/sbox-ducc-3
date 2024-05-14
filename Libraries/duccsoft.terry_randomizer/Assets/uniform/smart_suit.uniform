@@ -1,0 +1,12 @@
+{
+  "Name": "Smart Suit",
+  "CharacteristicItems": [
+    "models/citizen_clothes/jacket/suitjacket/jacket.suit.clothing",
+    "models/citizen_clothes/trousers/smarttrousers/trousers.smart.clothing"
+  ],
+  "SupplementaryItems": [
+    "models/citizen_clothes/shoes/smartshoes/smartshoes.clothing"
+  ],
+  "__version": 0,
+  "__references": []
+}

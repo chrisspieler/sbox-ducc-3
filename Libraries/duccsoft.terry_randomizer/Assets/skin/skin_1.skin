@@ -1,0 +1,7 @@
+{
+  "Name": "Beige",
+  "YoungSkin": "models/citizen_clothes/skin01.clothing",
+  "ElderSkin": "models/citizen_clothes/skin06.clothing",
+  "__version": 0,
+  "__references": []
+}

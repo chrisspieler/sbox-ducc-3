@@ -1,0 +1,19 @@
+{
+  "HairColors": "hair/default.hrclr",
+  "SkinTones": [
+    "skin/skin_0.skin",
+    "skin/skin_1.skin",
+    "skin/skin_2.skin",
+    "skin/skin_3.skin"
+  ],
+  "ElderPercent": 17,
+  "CueballPercent": 4.5,
+  "FacialHairPercent": 15,
+  "HairDyePercent": 5,
+  "HairDyeSaturation": "0.80,0.60,0",
+  "FacialOrnamentPercent": 10,
+  "PlumpLipsPercent": 20,
+  "EyebrowsPercent": 90,
+  "__version": 0,
+  "__references": []
+}

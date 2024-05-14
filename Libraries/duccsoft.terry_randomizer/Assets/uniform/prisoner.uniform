@@ -1,0 +1,11 @@
+{
+  "Name": "Prisoner Jumpsuit",
+  "CharacteristicItems": [
+    "models/citizen_clothes/shirt/jumpsuit/prison_jumpsuit.clothing"
+  ],
+  "SupplementaryItems": [
+    "models/citizen_clothes/shoes/sneakers/sneakers.clothing"
+  ],
+  "__version": 0,
+  "__references": []
+}

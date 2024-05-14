@@ -1,0 +1,12 @@
+{
+  "Name": "Priest",
+  "CharacteristicItems": [
+    "models/citizen_clothes/shirt/priest_shirt/priest_shirt.clothing"
+  ],
+  "SupplementaryItems": [
+    "models/citizen_clothes/trousers/smarttrousers/trousers.smart.clothing",
+    "models/citizen_clothes/shoes/smartshoes/smartshoes.clothing"
+  ],
+  "__version": 0,
+  "__references": []
+}

@@ -1,0 +1,14 @@
+{
+  "Name": "Armor",
+  "CharacteristicItems": [
+    "models/citizen_clothes/trousers/legarmour/leg_armour.clothing",
+    "models/citizen_clothes/vest/chest_armour/chest_armour.clothing",
+    "models/citizen_clothes/hat/bucket_helmet/models/bucket_helmet.clothing",
+    "models/citizen_clothes/shirt/chainmail/chainmail.clothing"
+  ],
+  "SupplementaryItems": [
+    "models/citizen_clothes/shoes/boots/black_boots.clothing"
+  ],
+  "__version": 0,
+  "__references": []
+}

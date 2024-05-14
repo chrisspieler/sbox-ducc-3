@@ -1,0 +1,10 @@
+{
+  "Name": "Cardboard",
+  "CharacteristicItems": [
+    "models/citizen_clothes/vest/cardboard_chest/cardboard_chest.clothing",
+    "models/citizen_clothes/trousers/cardboardtrousers/cardboard_trousers.clothing"
+  ],
+  "SupplementaryItems": [],
+  "__version": 0,
+  "__references": []
+}

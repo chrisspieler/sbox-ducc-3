@@ -1,0 +1,14 @@
+{
+  "Title": "Terry Randomizer",
+  "Type": "library",
+  "Org": "duccsoft",
+  "Ident": "terry_randomizer",
+  "Tags": null,
+  "Schema": 1,
+  "Resources": null,
+  "PackageReferences": [],
+  "EditorReferences": null,
+  "Metadata": {
+    "CsProjName": ""
+  }
+}

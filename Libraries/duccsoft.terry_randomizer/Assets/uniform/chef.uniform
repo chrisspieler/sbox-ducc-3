@@ -1,0 +1,13 @@
+{
+  "Name": "Chef",
+  "CharacteristicItems": [
+    "models/citizen_clothes/hat/chefs_hat/chefs_hat.clothing",
+    "models/citizen_clothes/shirt/chef_shirt/chef_shirt.clothing",
+    "models/citizen_clothes/vest/chefs_apron/chefs_apron.clothing"
+  ],
+  "SupplementaryItems": [
+    "models/citizen_clothes/shoes/boots/black_boots.clothing"
+  ],
+  "__version": 0,
+  "__references": []
+}

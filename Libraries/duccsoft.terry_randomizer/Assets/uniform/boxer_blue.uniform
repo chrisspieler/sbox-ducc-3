@@ -1,0 +1,12 @@
+{
+  "Name": "Boxer (Blue)",
+  "CharacteristicItems": [
+    "models/citizen_clothes/gloves/boxing_gloves/boxing_gloves_blue.clothing",
+    "models/citizen_clothes/hat/boxing_headgear/boxing_headgear_blue.clothing",
+    "models/citizen_clothes/shoes/boxing_boots/boxing_boots_blue.clothing",
+    "models/citizen_clothes/shorts/boxing_shorts/boxing_shorts_blue.clothing"
+  ],
+  "SupplementaryItems": [],
+  "__version": 0,
+  "__references": []
+}

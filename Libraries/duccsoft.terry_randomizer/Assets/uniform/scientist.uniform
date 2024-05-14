@@ -1,0 +1,14 @@
+{
+  "Name": "Scientist",
+  "CharacteristicItems": [
+    "models/citizen_clothes/gloves/rubber_gloves/rubber_gloves.clothing",
+    "models/citizen_clothes/jacket/labcoat/labcoat.clothing"
+  ],
+  "SupplementaryItems": [
+    "models/citizen_clothes/shirt/buttoned_shirt/buttoned_shirt.clothing",
+    "models/citizen_clothes/trousers/smarttrousers/trousers.smart.clothing",
+    "models/citizen_clothes/shoes/sneakers/sneakers.clothing"
+  ],
+  "__version": 0,
+  "__references": []
+}

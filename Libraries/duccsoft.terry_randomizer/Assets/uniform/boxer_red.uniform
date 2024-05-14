@@ -1,0 +1,13 @@
+{
+  "Name": "Boxer (Red)",
+  "CharacteristicItems": [
+    "models/citizen_clothes/gloves/boxing_gloves/boxing_gloves_red.clothing",
+    "models/citizen_clothes/hat/boxing_headgear/boxing_headgear_red.clothing",
+    "models/citizen_clothes/shorts/boxing_shorts/boxing_shorts_red.clothing"
+  ],
+  "SupplementaryItems": [
+    "models/citizen_clothes/shoes/boxing_boots/boxing_boots.clothing"
+  ],
+  "__version": 0,
+  "__references": []
+}

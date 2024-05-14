@@ -1,0 +1,14 @@
+{
+  "Name": "Cop Outfit",
+  "CharacteristicItems": [
+    "models/citizen_clothes/hat/police_hat/police_hat.clothing"
+  ],
+  "SupplementaryItems": [
+    "models/citizen_clothes/jacket/office_blazer/office_blazer.clothing",
+    "models/citizen_clothes/shirt/buttoned_shirt/buttoned_shirt_blue.clothing",
+    "models/citizen_clothes/trousers/smarttrousers/trousers.smart.clothing",
+    "models/citizen_clothes/shoes/boots/black_boots.clothing"
+  ],
+  "__version": 0,
+  "__references": []
+}

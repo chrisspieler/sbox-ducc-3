@@ -1,0 +1,8 @@
+{
+  "ShirtPercent": 95,
+  "JacketPercent": 20,
+  "BottomPercent": 100,
+  "FootwearPercent": 80,
+  "__version": 0,
+  "__references": []
+}

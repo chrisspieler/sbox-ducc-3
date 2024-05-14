@@ -1,0 +1,12 @@
+{
+  "Name": "Binman Uniform",
+  "CharacteristicItems": [
+    "models/citizen_clothes/shirt/polo_shirt/binman_shirt.clothing",
+    "models/citizen_clothes/trousers/cargopants/binman_trousers.clothing"
+  ],
+  "SupplementaryItems": [
+    "models/citizen_clothes/shoes/boots/black_boots.clothing"
+  ],
+  "__version": 0,
+  "__references": []
+}

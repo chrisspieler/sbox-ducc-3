@@ -40,6 +40,19 @@
         "ShouldDuck": false,
         "ShouldRun": false,
         "WalkSpeed": 60
+      },
+      {
+        "__type": "Ducc.SausageDresser",
+        "__guid": "89cd3426-0843-4e34-bd9a-b376a3dbeafd",
+        "BodyConfig": "body/default.bodcfg",
+        "DressOnStart": true,
+        "Model": {
+          "_type": "component",
+          "component_id": "c224c889-a1bb-444f-a90c-7cc07d3907ca",
+          "go": "4757ffb7-af1f-417f-b2d7-dc31685cffb3",
+          "component_type": "SkinnedModelRenderer"
+        },
+        "OutfitConfig": "outfit/default.clthcfg"
       }
     ],
     "Children": [

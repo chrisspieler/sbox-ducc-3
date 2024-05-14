@@ -1,0 +1,12 @@
+{
+  "Name": "Football Player",
+  "CharacteristicItems": [
+    "models/citizen_clothes/shoes/football_shoes/football_shoes.clothing"
+  ],
+  "SupplementaryItems": [
+    "models/citizen_clothes/shorts/football_shorts/football_shorts.clothing",
+    "models/citizen_clothes/shirt/tshirt/football_tshirt.clothing"
+  ],
+  "__version": 0,
+  "__references": []
+}
