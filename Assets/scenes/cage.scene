@@ -5428,8 +5428,8 @@
                 "Id": 17,
                 "Type": "call",
                 "Properties": {
-                  "_type": "package.duccsoft.ducc_3/Ducc.PropLauncher",
                   "_name": "Launch",
+                  "_type": "package.duccsoft.ducc_3/Ducc.PropLauncher",
                   "_isStatic": false
                 },
                 "UserData": {
@@ -5522,8 +5522,8 @@
                 "Id": 3,
                 "Type": "call",
                 "Properties": {
-                  "_type": "package.duccsoft.ducc_3/Ducc.FoxMiteSpawner",
                   "_name": "SpawnOne",
+                  "_type": "package.duccsoft.ducc_3/Ducc.FoxMiteSpawner",
                   "_isStatic": false
                 },
                 "UserData": {
@@ -6258,6 +6258,52 @@
           "__Prefab": "prefabs/sausage.prefab"
         }
       ]
+    },
+    {
+      "__guid": "0e45b9e3-d9d0-42c8-8dd2-eef91a16edff",
+      "Flags": 0,
+      "Name": "West Exit",
+      "Position": "-104,1448,200",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "Components": [
+        {
+          "__type": "Ducc.SausageDestroyer",
+          "__guid": "e53080f3-32e2-4d3c-9cee-7ca0267b6cd9"
+        },
+        {
+          "__type": "Sandbox.BoxCollider",
+          "__guid": "3a7850a7-f8d3-4c1d-9348-ea0cd09794b6",
+          "Center": "0,0,0",
+          "IsTrigger": true,
+          "Scale": "200,50,300",
+          "Static": false
+        }
+      ]
+    },
+    {
+      "__guid": "2fd0dfb6-c2b1-41dd-abff-f94de8dc7aa7",
+      "Flags": 0,
+      "Name": "East Exit",
+      "Position": "-104,-1488,200",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "Components": [
+        {
+          "__type": "Ducc.SausageDestroyer",
+          "__guid": "5a0a3cf7-20f2-44c7-9f0d-f4b2b409e91e"
+        },
+        {
+          "__type": "Sandbox.BoxCollider",
+          "__guid": "826ff7a7-e1a5-4e7d-9e9a-c9d64c1947f7",
+          "Center": "0,0,0",
+          "IsTrigger": true,
+          "Scale": "200,50,300",
+          "Static": false
+        }
+      ]
     }
   ],
   "SceneProperties": {
@@ -6283,7 +6329,7 @@
   },
   "Title": "cage",
   "Description": "",
-  "LastSaved": "2024-05-13T16:18:41.220415-06:00",
+  "LastSaved": "2024-05-13T17:12:20.3173663-06:00",
   "ResourceVersion": 1,
   "__version": 1,
   "__references": [
