@@ -2675,8 +2675,8 @@
                         "Type": "call",
                         "Properties": {
                           "_isStatic": false,
-                          "_name": "StartSound",
-                          "_type": "Sandbox.SoundPointComponent"
+                          "_type": "Sandbox.SoundPointComponent",
+                          "_name": "StartSound"
                         },
                         "UserData": {
                           "Position": "192,0"
@@ -5545,8 +5545,8 @@
                 "Type": "call",
                 "Properties": {
                   "_isStatic": false,
-                  "_name": "Launch",
-                  "_type": "Ducc.PropLauncher"
+                  "_type": "Ducc.PropLauncher",
+                  "_name": "Launch"
                 },
                 "UserData": {
                   "Position": "192,0"
@@ -5646,8 +5646,8 @@
                 "Type": "call",
                 "Properties": {
                   "_isStatic": false,
-                  "_name": "SpawnOne",
-                  "_type": "Ducc.FoxMiteSpawner"
+                  "_type": "Ducc.FoxMiteSpawner",
+                  "_name": "SpawnOne"
                 },
                 "UserData": {
                   "Position": "192,0"
@@ -5727,8 +5727,8 @@
                 "Id": 2,
                 "Type": "property",
                 "Properties": {
-                  "_name": "Transform",
-                  "_type": "Sandbox.GameObject"
+                  "_type": "Sandbox.GameObject",
+                  "_name": "Transform"
                 },
                 "UserData": {
                   "Position": "-48,-128"
@@ -5739,8 +5739,8 @@
                 "Type": "property",
                 "ParentId": 2,
                 "Properties": {
-                  "_name": "World",
-                  "_type": "Sandbox.GameTransform"
+                  "_type": "Sandbox.GameTransform",
+                  "_name": "World"
                 }
               }
             ],
@@ -6483,8 +6483,8 @@
                 "Id": 1,
                 "Type": "property",
                 "Properties": {
-                  "_name": "Transform",
-                  "_type": "Sandbox.GameObject"
+                  "_type": "Sandbox.GameObject",
+                  "_name": "Transform"
                 },
                 "UserData": {
                   "Position": "-48,-128"
@@ -6495,8 +6495,8 @@
                 "Type": "property",
                 "ParentId": 1,
                 "Properties": {
-                  "_name": "World",
-                  "_type": "Sandbox.GameTransform"
+                  "_type": "Sandbox.GameTransform",
+                  "_name": "World"
                 }
               },
               {
@@ -6603,6 +6603,45 @@
           "Static": false
         }
       ]
+    },
+    {
+      "__guid": "18cb619f-ef49-4e49-a244-c15016a84ac6",
+      "Flags": 0,
+      "Name": "Projector",
+      "Position": "-56,22,200",
+      "Rotation": "0,0.3488102,0,0.9371935",
+      "Tags": "light_spot,light",
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "Components": [
+        {
+          "__type": "Sandbox.SpotLight",
+          "__guid": "824c738e-8dc8-46f4-9598-32000b8773ca",
+          "Attenuation": 1,
+          "ConeInner": 15,
+          "ConeOuter": 12,
+          "FogMode": "Enabled",
+          "FogStrength": 1,
+          "LightColor": "0.91373,0.98039,1,1",
+          "Radius": 500,
+          "Shadows": true
+        },
+        {
+          "__type": "Duccsoft.Graphics.ProjectorComponent",
+          "__guid": "e30b53b7-9d47-4886-8ab4-5b13f706897a",
+          "Debug": false,
+          "MaxUpdatesPerSecond": 15,
+          "Size": "100,100"
+        },
+        {
+          "__type": "Duccsoft.Graphics.ColorFillEffect",
+          "__guid": "d5009ea4-597d-40d1-9346-aae8b5271ff4",
+          "Color": "1,0,0,1",
+          "ColorCycle": {},
+          "CycleSpeed": 1,
+          "Mode": "Static"
+        }
+      ]
     }
   ],
   "SceneProperties": {
@@ -6628,7 +6667,7 @@
   },
   "Title": "cage",
   "Description": "",
-  "LastSaved": "2024-05-14T21:40:51.573266-06:00",
+  "LastSaved": "2024-05-14T23:02:04.5265702-06:00",
   "ResourceVersion": 1,
   "__version": 1,
   "__references": [
