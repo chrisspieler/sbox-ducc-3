@@ -2603,6 +2603,120 @@
                   "Static": false
                 }
               ]
+            },
+            {
+              "__guid": "8eef16a2-1ecd-4730-b01c-b765e0fba7c7",
+              "Flags": 0,
+              "Name": "Speaker",
+              "Position": "-80,-0.000003814697,140",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.SoundPointComponent",
+                  "__guid": "fa921107-0961-4007-8c4f-5626f62372ab",
+                  "DistanceAttenuation": false,
+                  "DistanceAttenuationOverride": false,
+                  "Force2d": false,
+                  "MaxRepeatTime": 1,
+                  "MinRepeatTime": 1,
+                  "Occlusion": false,
+                  "OcclusionOverride": false,
+                  "OcclusionRadius": 32,
+                  "Pitch": 1,
+                  "PlayOnStart": false,
+                  "ReflectionOverride": false,
+                  "Reflections": false,
+                  "Repeat": false,
+                  "SoundEvent": "music/waltz_of_the_flowers.sound",
+                  "SoundOverride": true,
+                  "StopOnNew": false,
+                  "TargetMixer": {
+                    "Name": "speaker",
+                    "Id": "bbd0cbb7-5091-4983-80de-557d71330856"
+                  },
+                  "Volume": 5
+                },
+                {
+                  "__type": "Ducc.RandomEvent",
+                  "__guid": "44527515-94c2-4a3b-8ca0-d4362a479cb8",
+                  "EffectiveRarity": 1000,
+                  "OnEventStart": {
+                    "__version": 7,
+                    "__guid": "b34c14b5-1dfa-4cca-a435-87ccb6cb6bea",
+                    "UserData": {
+                      "Title": "On Event Start",
+                      "ReferencedComponentTypes": []
+                    },
+                    "Variables": [],
+                    "Nodes": [
+                      {
+                        "Id": 0,
+                        "Type": "input"
+                      },
+                      {
+                        "Id": 2,
+                        "Type": "scene.ref",
+                        "Properties": {
+                          "component": {
+                            "_type": "component",
+                            "component_id": "fa921107-0961-4007-8c4f-5626f62372ab",
+                            "go": "8eef16a2-1ecd-4730-b01c-b765e0fba7c7",
+                            "component_type": "SoundPointComponent"
+                          }
+                        },
+                        "UserData": {
+                          "Position": "-96,96"
+                        }
+                      },
+                      {
+                        "Id": 29,
+                        "Type": "call",
+                        "Properties": {
+                          "_isStatic": false,
+                          "_name": "StartSound",
+                          "_type": "Sandbox.SoundPointComponent"
+                        },
+                        "UserData": {
+                          "Position": "192,0"
+                        }
+                      }
+                    ],
+                    "Links": [
+                      {
+                        "SrcId": 0,
+                        "SrcName": "_signal",
+                        "DstId": 29,
+                        "DstName": "_signal"
+                      },
+                      {
+                        "SrcId": 2,
+                        "SrcName": "_result",
+                        "DstId": 29,
+                        "DstName": "_target"
+                      }
+                    ],
+                    "Defaults": {
+                      "$2.component": {
+                        "_type": "component",
+                        "component_id": "fa921107-0961-4007-8c4f-5626f62372ab",
+                        "go": "8eef16a2-1ecd-4730-b01c-b765e0fba7c7",
+                        "component_type": "SoundPointComponent"
+                      }
+                    }
+                  },
+                  "Rarity": 1000,
+                  "Recurring": false,
+                  "RollRate": 5,
+                  "TimeCurve": [
+                    {
+                      "x": 0.5,
+                      "y": 0.5
+                    }
+                  ]
+                }
+              ]
             }
           ]
         },
@@ -5430,9 +5544,9 @@
                 "Id": 17,
                 "Type": "call",
                 "Properties": {
+                  "_isStatic": false,
                   "_name": "Launch",
-                  "_type": "Ducc.PropLauncher",
-                  "_isStatic": false
+                  "_type": "Ducc.PropLauncher"
                 },
                 "UserData": {
                   "Position": "192,0"
@@ -5531,9 +5645,9 @@
                 "Id": 3,
                 "Type": "call",
                 "Properties": {
+                  "_isStatic": false,
                   "_name": "SpawnOne",
-                  "_type": "Ducc.FoxMiteSpawner",
-                  "_isStatic": false
+                  "_type": "Ducc.FoxMiteSpawner"
                 },
                 "UserData": {
                   "Position": "192,0"
@@ -6514,7 +6628,7 @@
   },
   "Title": "cage",
   "Description": "",
-  "LastSaved": "2024-05-14T18:17:17.6844428-06:00",
+  "LastSaved": "2024-05-14T21:40:51.573266-06:00",
   "ResourceVersion": 1,
   "__version": 1,
   "__references": [
