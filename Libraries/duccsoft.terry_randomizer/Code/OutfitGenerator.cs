@@ -1,6 +1,5 @@
 ﻿using Sandbox;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
 using System.Linq;
 
 namespace Duccsoft.Terry;
@@ -85,7 +84,7 @@ public class OutfitGenerator
 	private Uniform GetRandomUniform()
 	{
 		var uniforms = ResourceLibrary.GetAll<Uniform>()
-			.Except( _config.ExcludedUniforms )
+			.Except( _config.ExcludedUniforms ?? Enumerable.Empty<Uniform>() )
 			.ToList();
 
 		if ( !uniforms.Any() )

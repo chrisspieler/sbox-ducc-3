@@ -8,8 +8,8 @@ public class ClockSystem : GameObjectSystem
 	public static bool Debug { get; set; }
 	[ConVar( "clock_timescale")]
 	public static float TimeScale { get; set; } = 100f;
-	public static DateTime CurrentTime { get; private set; }
-	public static float DayProgress
+	public DateTime CurrentTime { get; private set; }
+	public float DayProgress
 	{
 		get
 		{
@@ -40,8 +40,14 @@ public class ClockSystem : GameObjectSystem
 	[ConCmd("clock_settime")]
 	public static void SetTime( float progress )
 	{
-		CurrentTime = new DateTime( CurrentTime.Year, CurrentTime.Month, CurrentTime.Day );
+		var scene = Game.ActiveScene;
+		if ( scene is null )
+			return;
+
+		var clock = scene.GetSystem<ClockSystem>();
+		var currentTime = clock.CurrentTime;
+		clock.CurrentTime = new DateTime( currentTime.Year, currentTime.Month, currentTime.Day );
 		var addedSeconds = TimeSpan.FromSeconds( (int)(SECONDS_PER_DAY * progress));
-		CurrentTime += addedSeconds;
+		clock.CurrentTime += addedSeconds;
 	}
 }

@@ -28,7 +28,19 @@ public class RandomEvent : Component
 	/// <summary>
 	/// The rarity that will be used given the current <see cref="ClockSystem.DayProgress"/> and <see cref="TimeCurve"/>.
 	/// </summary>
-	[Property] public int EffectiveRarity => (int)(Rarity * TimeCurve.Evaluate( ClockSystem.DayProgress ));
+	[Property]
+	public int EffectiveRarity
+	{
+		get
+		{
+			if ( !Game.IsPlaying )
+			{
+				return Rarity;
+			}
+			_clock ??= Scene.GetSystem<ClockSystem>();
+			return (int)(Rarity * TimeCurve.Evaluate( _clock.DayProgress ));
+		}
+	}
 	/// <summary>
 	/// The number of seconds that shall elapse between attempts to roll the event.
 	/// </summary>
@@ -39,10 +51,12 @@ public class RandomEvent : Component
 	[Property] public bool Recurring { get; set; } = true;
 
 	private RealTimeUntil _untilNextRoll;
+	private ClockSystem _clock;
 
 	protected override void OnStart()
 	{
 		_untilNextRoll = RollRate;
+		_clock = Scene.GetSystem<ClockSystem>();
 	}
 
 	protected override void OnUpdate()

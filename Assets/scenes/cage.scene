@@ -2588,6 +2588,7 @@
                 {
                   "__type": "Ducc.AttentionGrabber",
                   "__guid": "84f9826b-b22d-4cc3-953e-0b5b01c59cac",
+                  "__enabled": false,
                   "AttentionTarget": {
                     "_type": "gameobject",
                     "go": "8a61a228-d0f2-4039-9756-9387a07fc5de"
@@ -5396,7 +5397,7 @@
         {
           "__type": "Ducc.RandomEvent",
           "__guid": "5d5a03d8-690e-4ee5-b01e-639a37a3f420",
-          "EffectiveRarity": 0,
+          "EffectiveRarity": 250,
           "OnEventStart": {
             "__version": 7,
             "__guid": "961f8098-4964-4f02-ab36-ac7bf7fd674b",
@@ -5429,9 +5430,9 @@
                 "Id": 17,
                 "Type": "call",
                 "Properties": {
-                  "_isStatic": false,
                   "_name": "Launch",
-                  "_type": "Ducc.PropLauncher"
+                  "_type": "Ducc.PropLauncher",
+                  "_isStatic": false
                 },
                 "UserData": {
                   "Position": "192,0"
@@ -5464,10 +5465,12 @@
           "Rarity": 250,
           "Recurring": true,
           "RollRate": 5,
-          "TimeCurve": {
-            "rangex": "0,0",
-            "rangey": "0,0"
-          }
+          "TimeCurve": [
+            {
+              "x": 0.5,
+              "y": 0.5
+            }
+          ]
         }
       ]
     },
@@ -5528,9 +5531,9 @@
                 "Id": 3,
                 "Type": "call",
                 "Properties": {
-                  "_isStatic": false,
                   "_name": "SpawnOne",
-                  "_type": "Ducc.FoxMiteSpawner"
+                  "_type": "Ducc.FoxMiteSpawner",
+                  "_isStatic": false
                 },
                 "UserData": {
                   "Position": "192,0"
@@ -5563,10 +5566,12 @@
           "Rarity": 0,
           "Recurring": true,
           "RollRate": 0.1,
-          "TimeCurve": {
-            "rangex": "0,0",
-            "rangey": "0,0"
-          }
+          "TimeCurve": [
+            {
+              "x": 0.5,
+              "y": 0.5
+            }
+          ]
         }
       ]
     },
@@ -5583,7 +5588,7 @@
         {
           "__type": "Ducc.RandomEvent",
           "__guid": "9c01187f-cc9e-4ce7-93b4-5715fe78077e",
-          "EffectiveRarity": 99,
+          "EffectiveRarity": 100,
           "OnEventStart": {
             "__version": 7,
             "__guid": "d2a4142d-42e5-4688-a093-1ee760d47292",
@@ -6346,7 +6351,7 @@
         {
           "__type": "Ducc.RandomEvent",
           "__guid": "cfddd574-e904-4525-ae8a-ec03e730fc7d",
-          "EffectiveRarity": 49,
+          "EffectiveRarity": 50,
           "OnEventStart": {
             "__version": 7,
             "__guid": "437ed5fc-f949-4664-a86f-620ff926e2ec",
@@ -6509,7 +6514,7 @@
   },
   "Title": "cage",
   "Description": "",
-  "LastSaved": "2024-05-14T15:33:25.5604592-06:00",
+  "LastSaved": "2024-05-14T18:17:17.6844428-06:00",
   "ResourceVersion": 1,
   "__version": 1,
   "__references": [
