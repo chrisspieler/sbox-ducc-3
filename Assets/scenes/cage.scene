@@ -259,6 +259,7 @@
           "__guid": "3434398f-d62a-40aa-80a6-0d3ed6d1a9bf",
           "Collision": "Mesh",
           "Color": "1,1,1,1",
+          "HideInGame": false,
           "IsTrigger": false,
           "Mesh": {
             "Topology": "H4sIAAAAAAAACu2ZaYydVRnH57R2utPptHS6TBdaptNZ2k63mS6004VSutF93/d9ky8FacWNikqrVLrSUlQ2KZtSFGVHXKFqoolIIomKJCpfRCURUZ9f3t\u002BNN5OaW2OVL97kn3vve/7nnOc85znPct6dRUVF51NR0cfjuy4QP4ueD7QI9AksDrQNtA90DXQP9AjUBwYEvh\u002BoDVwfaAyMDlwVGBuYGLg6cE1gamB5YFvg5cDawPrA5sDXAzsDBwIfLcpkuSXwycDnAp8JHETOwL2B\u002BwMPB84GHg98N/BE4EeBvwR\u002BEvhZ4OeBXwR\u002BHfhl4DeB3wd\u002BG/hD4M\u002BBPwb\u002BGvgb643F9w1cGegfqA7UBuoCQwP1gZGB0YGrAhMDVwemBa4L/L3J56a8Z3f7\u002B5b4/qq/b4/vzweOBI4F7g18KXA28OXAY4FzFxi36Yc9A80C\u002BR/2c4LPmwc\u002B4PMc95uBBtvY72Lbm8m9z7l51jJv3OZyh2sX9G0daOPY9G0VWBToJhcbamd7C7knlbGl41xme7HcDwcqHK\u002BDYyb5cK/0WSH9/Lc/rV1nd2Vv5Vm5wt9tPDPltreW\u002B6FAX3XTM9DL9jZyh\u002BWtu7dj5nQJd16gzHbmmh/oor765PW9GPkrXEMr9Ytu9zpuof7sXZWGNc29wzcMcV8L9UfOgcgd/ae7t7XaZoeL6N/OuX6ovRc1sas26nK3emPMoc7ZQc4I19Be\u002B8a2Hw559isPsswOdFb/9e4Z/TsGRun7SsTIwHjbSgNj9IslPoM71/E66S/H2V4qt3fMv8RnjY5ZIh/u9\u002BzX2XVPdOwS577WsS4PTNIXd5QPd6H2wrPJrqGjfLgLtC/4U5yj1D749CXaTJn\u002BfZrtJc7dqHzwp9unVD7co4Gai9jfQh/GnKOOO7tf7FXL9M/4Nc896\u002Bwa57rmMte7QB118QzM98yVeZ4Weaa6OMZCddLNZ\u002BjiWKBa/8a8Ob9QSH44KwIr9RNdjZUb9QP4ilWB1bZ3k7vNfebZGmNqD/lw28T6ZzreOsekvYfcD3oeGG\u002BDMjBfubF5uzYONhmryx0P2fbov3i2xT7l8uHeqP/opqwb8vzcVuP\u002BePW8wxygp2Mw9w36Jfi77NNTPty7AoOUZ49r7OV53\u002B06\u002B3pGr/fM9/I5a28V\u002BplxEftT6FOurFtcb0t9Z3vlb62vr7C9p7rZpHyFxi82Ft6pX2T9\u002B9VZbsyPmDv1105vDnxWP8wcHzOv6i8f7gnttV/gE\u002BZc/eXDPe757GNudrPt/eR\u002BxzOHDLcGPhWoNHaQu93u/PT5tHlcpXy4z3gmeXabOV6lfLh3u7\u002BMd8gxaa\u002BUe1p9VJgn3up8fVz7C/pM1ntYHQ1wPGQ7ZZwopP8yfdW39JGs/4g6q1Ffx9Vxtf7gmD6vRn9wUp9QrTwnlKlOeU65RtZT7F63tb23tr7f9krXfpv66a\u002BunjKOYeNnPDODLoF9I/N9gZKU\u002BdUq8/AnnY81PhAoTZkfrjZHf9r9LTQ\u002Be/JQoH3K/HKtuf1zxl3i9CPoNWV\u002BvMb8/1n39z9d3\u002BAY41ygR8riwEDrihe1b3T4tUDXlMWFwdYb39YeqtTFK/qzXvq2M\u002BonmWsnYyjr/YZrblBfT6vjEe7nU56Zetf7rDqu196f0eZHmq8/b97SoP7Q3f0x4T7X86I6HOn5eMEznVvfS66R9ZRp61ON3/0860dsH\u002Bzaz9m/k7lIecri5CBrspfsjzw/CFyesrjZ3rrxIeuLKnV3WfyfZfx62ZiHPtuZ2zWnzlJ/59XhBHO/HweWpywu1VkLNjMfLbT/5IY/DSxLmU8eag1ZbD5aqD\u002B54quBxSmLgcOsP1sYX9jT1wKLUhYDh1ubtjY\u002BFxqfPX89MD9lMW6EdW1b9VWoP/r4VWB2yuJ\u002Bg/VwO/WJTbwR2JmyuFlvzdzB886evxnYkbI4O9JauqPnvdD8zPe7wLyUxe3R1uCdPe/Y0FuBbSnzWaOs0zt53guNX\u002BiDDb4d2JKymDnG\u002Br/M806u/afAppTlHWO9F\u002BjueSfXfiewLmV5zFXeHXTT3gvNz3rfDaxPWQ4zxHuK5HkgT34vsCZlOcQ47yR6mv9jjxThq1KWVzV6X9HL/HaIY3EGpnm\u002BcDacsYWeH87OANvrPBvYxHXaK7bKGZhuvkQtRs40w3yaXLrW9qGeDWRarD1jy6/K72FuRU46U3vFVl/zf3dzU8449jtA339eeRq0TWxmrvaILb4uv0pfQQyarT1ii2/4v9pYRQyaoz1hS2/6v8ZYRQzBvmr1TWedb7S2\u002Ba76G6OtvCV/oLGIGJGzH2wBG5qfy0lT5gMX6S\u002BJLU/YPlbbetv\u002B49zrd\u002BR30pfCY/9LrQXnqO9G9/492/GBV3h3tVSfyV3WgMAya71\u002B3mstlQ93of6EuqfCO6\u002Bl8uHOcA8ZrzJlYy6VD3eu/oRascr7smXymXtQymoO6qwa7Md2\u002BHCX6i\u002BRZ2DK1rBMPtwl\u002BkvqxsHewy13fMaeo7\u002BnDhviHd1y\u002BXCHp6ymYb5hKZNxuXy4K/X31KojvN9bYX/6joNjHGzw7m\u002BFfLhrPa\u002BMNyplMqyQD3e155UzM8Y7w5WeQe4Qx6csxjHe2JTJsFI\u002B3I36G/iNKeuzUvmQbYX\u002BhDM3wfvIVfIZ\u002Bxpk8MxN8q5ylXy4W/WHzDc5ZTKukg93s/6Q/Z4Sv691PMZn7A36c87sVO9BV8uHW6H9MN/0lMm4Wj7c7fp7zvRM71DXaH/Y3gLjEfxZKZtjjXy4u4xH2AO2UKk91hnryAE26k\u002BIPcS8tcqH7U5RfuZjrn6eh3pjLTFwt/6L2E3MXae9cnYGap/YK7Zaoz0PNxcgxm/Qv5JbkBOs1x6x/WHaH/vJXmLjG/Xn5DLEiK36W3w/Ockm7Q3bHZUXD4gdxITN2h\u002B215AXT4hdxJQt2hu2OzbPvthLbGyr/o9YRYzeqX8jNhLztmkv2ObkvHhJbCVmbtd\u002BsJ1JefGW2E7M3aE9YHvT8\u002BI9uQUxf5f7jW3Mcn/Zb/YaG9mtvydXIQfZcwnyg/f7g0/dl/degBjBu4PTKbsneL/lIyYdCFly7zCIObzHOBW46X8gH/o5FHOdSNk9C/MfjN\u002BPp\u002BxepFB/fPJh37VwL0MM4N3LSfWLT73D9zC0w4d7V8rubfCJR31Hs1c\u002B3C\u002B6fsY7nrIx98qHe6fy0s5cx/3PeljLPudnPejyoO30p\u002B9Rx0ceZDksH/vANs4oH/vD3nzB/7TTlnv/hLzIekceH\u002B4Bx8cn3\u002BP7J\u002BpFfCzvoR6wfzPfBVFj7pMP9x7b4cOlzz7zKWpPaj7a8bkP\u002Bl5rvz6U91uP2L\u002B9tSB\u002Blnb4cB\u002B0HT5c\u002Buy3zuVunnsV2vGpvCv7ivaAz300790Z\u002BuZsHbIdPtzHbIcP91Hb2Q9sCxu/9Nb8/8\u002B/\u002Bym2Bmn6nHsWvi/0jooYyneD8Y8Yk7sLIMfne6H5N7/Zc77XGkN3ekecG\u002B/GJrHmBu9AD3qvyLMT3gOe9j93cnyfuoB8T3rn85x3O9yn8Jx7Gr65T8lxX/H\u002Bo5CeqOmoy6jlqMeooai7qJ2oj6hpqIOoPahnqBmpW6glqD/I6cnByZPJX8kxyQPJ28i9yJnIe8hdyHfIuchDyDXIJ8hhyAuI/cR3cgriOLkV8ftfyZ3zlfhI/By\u002BCv/BGeccNuX/A\u002BpU6Iy0IAAA",
@@ -1956,6 +1957,7 @@
           "__guid": "85850501-79cd-4fb3-bb39-61acf3fca05d",
           "Collision": "Mesh",
           "Color": "1,1,1,1",
+          "HideInGame": false,
           "IsTrigger": false,
           "Mesh": {
             "Topology": "H4sIAAAAAAAACk2Vh1MTYRTEjxLSA2mQhIQgNkAs2BWxIRaQphQFLEixK/Ze/nPdnfndzDGzQ5J73/t295XrD4LgrzAgXBIOC9tCU3ggDAk3hF6hIowJdWFDGBTOCSPCpnBfWBMuCI\u002BEy8JV4ZrwVLgnrArrwkPhsfBE2BJ2hJTQIhwQCkL4lxdiQrfQJiwJJWJb\u002BVwWOokzlyzP2oUe/ltDXNglr3N1cJdjE0JS6Cd3O78VOWdP0sJLcsbgHPLynVk8SZE7A7cM95jjjNBFzhyf8xGtrkOe513wjsGnSF1aubMArzj3lalXGQ0laprhTA/1bYt4OkRux1SFY\u002BRKUPMBdMfhEnK2VzVhH7n8e0M4Dc8UvbKfXG1wde6AnH3CXnL77j3CK7gnqEWFM2lij/I5Abck51Pc1QKfJNwOEWsvDgoL\u002BJai1\u002BrwjeFFCp8y9Phx/EmSawytrvWwcJL8LXgd9mSO2ThFrjTcN8jlXjginOCZdY4Kz9CboRaD8OkkNuyFDNyqnM9xVwM\u002BWbhlI314RriL3hy1GoFv2LvDkRqfFabwJIn2WqRnzwu3iPfv48JrtBTYBbNwDOjtgGfmcFGYI5frcEV4R64SO\u002BQnfWNdE8I3\u002BqTMflnkrHtpUvjE9252zzJnO5iNTKTG14UVcuXR8ou\u002Bs8abeJAjfpozKZ5Psfc60TSD5gr5buNRF3rn2I1V4mc5m0fvApprxM/jUQGOrt1v\u002BDn\u002BDj1dRO8SmuvEL1LzEvxX2MUN4peZyzIcreUP/lbY2S8iHNfQVEGD9/kP6tPObgpnocauf8NMFNE\u002Bz7Ne3gNvIz28QR0DNPgd8T4yL5vMTBINfn98jOz7bXhkyeN3y2c09qB9mlxN3jtfyGUOz9HegUbP4ldyNdn9O5yv4M0ouWv0/jr6q\u002ByyVWJ70RqHaw1vxomt0/vWHBC/i0c1OH5Ac5J4e/Mdfn30/hb6G3gzQWwTrWn86MObSWINz5bv8DNztnb3gD0xR9faHvm5c/puz6xzuz88O\u002B4Rf3fPeXbdo\u002BE8ubc8U/7unnMve4ad31rtlz0xL\u002B8272/XwHvfu8x6PXPeg9511ueZdR08e54vz5DnxLPgfv\u002BnP9fNtbH/9ti/2Sv7YQ3WZS7m9x\u002BDluVtFAkAAA==",
@@ -2674,8 +2676,8 @@
                         "Id": 29,
                         "Type": "call",
                         "Properties": {
-                          "_isStatic": false,
                           "_type": "Sandbox.SoundPointComponent",
+                          "_isStatic": false,
                           "_name": "StartSound"
                         },
                         "UserData": {
@@ -2792,7 +2794,8 @@
           "Height": 64,
           "IgnoreLayers": "",
           "Radius": 2,
-          "StepHeight": 18
+          "StepHeight": 18,
+          "UseCollisionRules": false
         },
         {
           "__type": "Ducc.Quacker",
@@ -5544,8 +5547,8 @@
                 "Id": 17,
                 "Type": "call",
                 "Properties": {
-                  "_isStatic": false,
                   "_type": "Ducc.PropLauncher",
+                  "_isStatic": false,
                   "_name": "Launch"
                 },
                 "UserData": {
@@ -5645,8 +5648,8 @@
                 "Id": 3,
                 "Type": "call",
                 "Properties": {
-                  "_isStatic": false,
                   "_type": "Ducc.FoxMiteSpawner",
+                  "_isStatic": false,
                   "_name": "SpawnOne"
                 },
                 "UserData": {
@@ -5811,6 +5814,7 @@
           "__guid": "e337534e-10aa-4eef-8a17-cd38945ba7e7",
           "Collision": "Mesh",
           "Color": "1,1,1,1",
+          "HideInGame": false,
           "IsTrigger": false,
           "Mesh": {
             "Topology": "H4sIAAAAAAAACoWW\u002BXNUVRCFMwTIJEPCDCGTEJhszJJMlEVEREA2RfZ9qUIWEdkEARGwChTZd0RAZHFh59\u002BU/qq\u002BV/WKXzJVp2bm3XO7\u002B3T37fvqDQ0NbwMfBfiMCowOjA1kAy2BcYG2QFegOzAlMCswGKgHPghMC3wa\u002BCwwP/B5YEngi8DGwObA1sAPgW8D3wX2Bw4GTgROBk4HzgR\u002BCZwL3A78HvgjcD/wV\u002BBxICOINf3ZZXw8b1RHQ4o70edgjBrTmqeql09Tym6j3Aly2dssN\u002BNeclX2G27OvGXkwy1qC9ut5jQjH\u002B5Oc4u98drKyIebT2ku\u002BJz/Ta59E5js/nZtJLkg9qpx46/DGBv1QW6OBnrd0/leroj9Y\u002BPGxqTAWu1k7Y1\u002Bf7cYx3r3NVuXir/xWwqs0U\u002BLumv\u002B/n\u002BET1Zfn5gX4uvTdtb4qeUM84q/AX22yKuoIWu\u002ByuYsqWtNDc3moJqqIzkYsveTOnMWZqbqOuy5yPkM7mzXqMuHnpmcz\u002BCusA7Ym67NnPxpnlHWxulrur9HqbVTXznP54Dr4927Uo2txjLk7zHWts9YwBw1tJkjcr3MPqL35nrW6bu8Z3\u002BRa3DmOQfyPoO7Wv9ggTMiLx/uKvXzbKE28/LhLpcLZ7HzpSAH31/Zj2Cps6cgH\u002B46\u002B5FnX6qhIB/uBnOY19ZC/WXV3iW3zVrNcb3d2Bboa4Ja5qXO4UprPtH6rLFG7caw2pg65axTY4c9uNYzVPTZBjUW7cn1niH2g02B8/Z10Rn8tTbQsSVw2XPQ6Xzebc9zLrYFrtr3Xc7uPfoY6XwW9XXcnmK\u002BbPe72/nDrPs\u002B0KO/HfpMNOxWA/xktheMr8tYtvi/ydnX6n6e7fWOKWmDO\u002Bew8w3OPu\u002Bfkny4x4yXZwe8m0ry4d7wzGDvkDZZL8k9op5ufR3y/1i1duh/kvfgDtdL7r3pmZ9sLHvlZ5zN242PeH5UA/\u002BL5vqSc4s9PwWeOld6vGMv2g/sORX4z57s9f69YD8wW38OPHfu9Hk3X7EfRqo/c\u002Bds4LVzqd97/Zr6mM2/Bl45xwa882\u002BZX\u002BL9LfCvM26q7wPXU/ouqLFsv5y3hyvm45I9X9beRW3W1HPFHFTsp8v2eNV4r5mDqvW6as0Gzf8Na1AzvutqGlLPLXMwaH1v2lND\u002Brzju03dGHnX\u002Bcd64fOu7z11\u002BXD/tl74vOc7UV0\u002B3GfWC3sPtFmXD/dPZzoxPfR9ath11l5YL2J85LtWwof7xnph/4k\u002BhuXDfWm9KsZ6Rz299uJJ4\u002B\u002BxtidcL6v9ifurarkrv89ePa2\u002BmrHe83\u002B/vXrG\u002BKkHvUXPYI/4iA1NxI8etJAD\u002BNSLXqUHWee8MuOZ4/TS\u002B/2NPzQSR3Ivs487lXXuKu4W7gTmOncB9wkznbmd2GFGMueYZcn8YG5w9tP\u002B6F36nZ6lz\u002BhN\u002BouakndyR77JGTrJDfreAf5zK6vcCwAA",
@@ -6627,19 +6631,35 @@
           "Shadows": true
         },
         {
+          "__type": "Duccsoft.Graphics.VideoPlayerComponent",
+          "__guid": "9f6e315d-d810-4ff5-9762-fdb023aea531",
+          "IsPlaying": false,
+          "Progress": 0,
+          "VideoPath": "videos/BoiseLightning.mp4"
+        },
+        {
           "__type": "Duccsoft.Graphics.ProjectorComponent",
           "__guid": "e30b53b7-9d47-4886-8ab4-5b13f706897a",
           "Debug": false,
+          "Light": {
+            "_type": "component",
+            "component_id": "824c738e-8dc8-46f4-9598-32000b8773ca",
+            "go": "18cb619f-ef49-4e49-a244-c15016a84ac6",
+            "component_type": "SpotLight"
+          },
           "MaxUpdatesPerSecond": 15,
           "Size": "100,100"
         },
         {
-          "__type": "Duccsoft.Graphics.ColorFillEffect",
-          "__guid": "d5009ea4-597d-40d1-9346-aae8b5271ff4",
-          "Color": "1,0,0,1",
-          "ColorCycle": {},
-          "CycleSpeed": 1,
-          "Mode": "Static"
+          "__type": "Duccsoft.Graphics.VideoPlayerEffect",
+          "__guid": "2600e4d4-cd2c-4bf3-94e4-8314dd73f82d",
+          "Player": {
+            "_type": "component",
+            "component_id": "9f6e315d-d810-4ff5-9762-fdb023aea531",
+            "go": "18cb619f-ef49-4e49-a244-c15016a84ac6",
+            "component_type": "VideoPlayerComponent"
+          },
+          "VideoIsReady": false
         }
       ]
     }
@@ -6667,7 +6687,7 @@
   },
   "Title": "cage",
   "Description": "",
-  "LastSaved": "2024-05-14T23:02:04.5265702-06:00",
+  "LastSaved": "2024-05-15T11:25:04.0361233-06:00",
   "ResourceVersion": 1,
   "__version": 1,
   "__references": [

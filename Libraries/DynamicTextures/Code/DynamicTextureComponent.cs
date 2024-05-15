@@ -19,22 +19,27 @@ public abstract class DynamicTextureComponent : Component
 			return;
 
 		_lastTextureUpdate = 0f;
-		EnsureTextureCreated( Size );
+		EnsureTextureCreated();
 		ApplyEffects();
 		OnAfterUpdate();
 	}
 
-	private void EnsureTextureCreated( Vector2 size )
+	private void EnsureTextureCreated()
 	{
-		if ( OutputTexture == null || OutputTexture.Size != size )
+		if ( OutputTexture == null || OutputTexture.Size != Size )
 		{
-			OutputTexture?.Dispose();
-			OutputTexture = Texture.Create( (int)size.x, (int)size.y, ImageFormat.RGBA8888 )
-				.WithName( $"{GameObject.Name}_DynamicTexture" )
-				.WithDynamicUsage()
-				.WithUAVBinding()
-				.Finish();
+			InitializeTexture();
 		}
+	}
+
+	[Button( "Initialize Texture")]
+	public void InitializeTexture()
+	{
+        OutputTexture = Texture.Create( (int)Size.x, (int)Size.y, ImageFormat.RGBA8888 )
+			.WithName( $"{GameObject.Name}_DynamicTexture" )
+			.WithDynamicUsage()
+			.WithUAVBinding()
+			.Finish();
 	}
 
 	private void ApplyEffects()
